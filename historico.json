@@ -1,0 +1,617 @@
+{
+ "episodios": [
+  {
+   "data": "2026-11-04",
+   "gerado_em": "2026-11-04T16:52:02-03:00",
+   "noticias": [
+    {
+     "titulo": "Exames do presidente Lula estão dentro da normalidade, diz boletim",
+     "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/exames-do-presidente-lula-estao-dentro-da-normalidade-diz-boletim"
+    },
+    {
+     "titulo": "Comissão aprova proposta que inclui povos tradicionais no crédito fundiário",
+     "link": "https://www.camara.leg.br/noticias/1315853-comissao-aprova-proposta-que-inclui-povos-tradicionais-no-credito-fundiario"
+    },
+    {
+     "titulo": "Vídeo: Políticas para saúde mental de idosos e defesa da mulher avançam na CDH",
+     "link": "https://www12.senado.leg.br/noticias/videos/2026/11/politicas-para-saude-mental-de-idosos-e-defesa-da-mulher-avancam-na-cdh"
+    },
+    {
+     "titulo": "Com Marinho na disputa à presidência do Senado, PL se divide sobre lançar nome para Câmara",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/04/com-marinho-na-disputa-a-presidencia-do-senado-pl-se-divide-sobre-lancar-nome-para-camara.ghtml"
+    },
+    {
+     "titulo": "Miriam Leitão: “vitórias” brasileira e nos EUA são “excelentes notícias”",
+     "link": "https://www.poder360.com.br/poder-midia/miriam-leitao-vitorias-brasileira-e-nos-eua-sao-excelentes-noticias/"
+    },
+    {
+     "titulo": "Como antibolsonarismo aqui, antitrumpismo vence nos EUA",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/colunas/marcosaugustogoncalves/2026/11/trump-afunda-nas-midterms-e-da-aula-de-como-perder-eleicao.shtml"
+    },
+    {
+     "titulo": "CNC vai ao STF para adiar o fim da escala 6×1 e que redução da jornada só comece em 2027",
+     "link": "https://www.jota.info/trabalho/cnc-vai-ao-stf-para-adiar-o-fim-da-escala-6x1-e-que-reducao-da-jornada-so-comece-em-2027"
+    },
+    {
+     "titulo": "Renan Santos e MBL tentam se aproximar do eleitorado de esquerda após perderem espaço na direita",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbVRudlFQRVJnMl9LYk9aREZnQW0wNzdVMWJjVGJnaVMwODJDaVg2Q0kybTNfaFcxTGtZTUNScU1CdWpyamh4X2ZvWEx1czZnQ2JQT3RCWkduenNCLUYyYWM2VVhqNG1kT0d5NHFTT0NpOGEwNUdWUjEzcWd3akFhZEtZTURSVEloaURLbm5paXRWXzhaS1A2SDI3Z2VGNS1haHNmUkExQXlENWh0SlhnenN3SU5jUW5YWkEtLUtpWHp2UkJ4?oc=5"
+    },
+    {
+     "titulo": "Missão pede ao STF para mudar distribuição de vagas no Congresso",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS05FbndaclR5TzVXWktHWU5UX2dnR0NNdGJjZS1SYmdSUklyVkNzWVBkYUg5RUtUbkRoS2o4ZHdWMmo4YjVQRzBfZ01XVU5ZNHBTemVNZVRENGZkTURSdVoyTEFIaHNpWHI1eVM4NUhWWklQLURyQTJIY3NzVTJ6dA?oc=5"
+    },
+    {
+     "titulo": "Com avanço democrata, Trump terá dificuldade em seguir com política externa atual, avaliam integrantes do governo Lula",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/04/com-avanco-democrata-trump-tera-dificuldade-em-seguir-com-tarifas-e-doutrina-donroe-avaliam-integrantes-do-governo-lula.ghtml"
+    },
+    {
+     "titulo": "Conheça James Talarico, evangélico que derrotou nome de Trump no Texas",
+     "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/conheca-james-talarico-evangelico-que-derrotou-nome-de-trump-no-texas"
+    },
+    {
+     "titulo": "Anvisa aprova versão da caneta Wegovy em comprimido: o que falta para chegar às farmácias?",
+     "link": "https://www.bbc.com/portuguese/articles/cjn5vdkk0gelo?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "titulo": "O que a vitória democrata significa para a economia dos EUA sob Trump",
+     "link": "https://www.dw.com/pt-br/o-que-a-vitória-democrata-significa-para-a-economia-dos-eua-sob-trump/a-79857491?maca=bra-rss-br-all-1030-xml-mrss"
+    },
+    {
+     "titulo": "Key moments as Democrats sweep to victories in US midterms",
+     "link": "https://www.aljazeera.com/video/newsfeed/2026/11/4/key-moments-as-democrats-sweep-to-victories-in-us-midterms?traffic_source=rss"
+    },
+    {
+     "titulo": "SC confirma 4° foco da doença de Newcastle e reforça medidas de controle em granjas",
+     "link": "https://g1.globo.com/sc/santa-catarina/noticia/2026/11/04/sc-confirma-quarto-foco-da-doenca-de-newcastle.ghtml"
+    },
+    {
+     "titulo": "Aquicultura em águas da União bate recorde com 179,6 mil toneladas",
+     "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/aquicultura-em-aguas-da-uniao-bate-recorde-com-1796-mil-toneladas"
+    },
+    {
+     "titulo": "Tesouro Direto sai do ar com taxas em queda, à espera do Copom",
+     "link": "https://www.infomoney.com.br/onde-investir/tesouro-direto-abertura-fechamento-04112026/"
+    },
+    {
+     "titulo": "Pessimismo com Brasil bate recorde e gestores abandonam Bolsa",
+     "link": "https://exame.com/invest/mercados/pessimismo-com-brasil-bate-recorde-e-gestores-abandonam-bolsa/"
+    },
+    {
+     "titulo": "Investidor estrangeiro ‘ainda não abandonou o Brasil’, mas há um risco no radar, segundo estrategista da XP",
+     "link": "https://www.moneytimes.com.br/investidor-estrangeiro-ainda-nao-abandonou-o-brasil-mas-ha-um-risco-no-radar-diz-estrategista-xp-igdl/"
+    },
+    {
+     "titulo": "10-year Treasury yield slides as traders mull over Democrats' midterm victories, oil prices drop",
+     "link": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html"
+    },
+    {
+     "titulo": "A massive trade just happened in a leading mortgage lender: Watch Options Action Live",
+     "link": "https://www.cnbc.com/2026/11/04/a-massive-trade-just-happened-in-a-leading-mortgage-lender-watch-options-action-live.html"
+    },
+    {
+     "titulo": "Dólar recua e Bolsa sobe após vitória democrata nos EUA; Copom decide juros hoje",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBndnJwQ3JITGlJY2pzU3BnU1pEWWZNYldVdFlJUlozZFN3bWF5R3BheG5oTXNIamdzbXhtaC1QV3h0X0ptdnJ6YW90Q0hRMG1ucDY1QkFrWHY5YzhRMTN1TUFTTTdPYjBQTFZ2NGMzV092ZDBVaTU3OTUxdjNXcFE?oc=5"
+    },
+    {
+     "titulo": "ETF de chips sobe 40% no ano e amplia exposição à IA",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5KMUhzeFJ4UWJzMnRpOWVsRUJIWkdhTjN3RURyQ183WFctckIwcWV2cjl6ckc0eTZxamRZV19jN2puM0pPVkNnRDlHSUN4Z2RnY3FnU2N4SFgwT0laM28zVEJjRW9QTHQ5OVlsX2RDYlhfX3YtZTh2aA?oc=5"
+    },
+    {
+     "titulo": "Mercado de trabalho mantém saldo positivo, mas ritmo de contratações desacelera em setembro",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUkdFaWd5dGpDRjFabWVkTVpOdTYxcVlQQy1ocExxQWpSQnprQ015cElwRi1YaTBkVmlWOUQtY2ZtSzdYVnd3LUJOTTZfM3Z1WEhhc2ZnWWdRMVpzQmMtQWVaeVBPTFRpOVktVWZiY2tlcU9zekREa3NYSzA0ZmkzYjY3d0pLNHZKQmtOTkJjSExrR05yUGl1UEx5ZzN3bHdua0JuY1Ayd3FnSHA4NTBUZ0J0S3pwSGZpRlR0d1lvWXE0MFQ2MW1MSjV6RW0zUDY0TkE?oc=5"
+    },
+    {
+     "titulo": "Dia da Favela: o que mudou no emprego e na renda dos brasileiros em 2026?",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMDVUOHVuRFQwSGotT1IySnh4UmZGY2NpUzNWMVcyUVZ2YmJzMGRsZnFYcTIzdUE2dlFDN0xxUVRJZ0o5bl9YNERnb1lTZlRLOGFsZkJiNUhFdU5mT29jQXZWSHdLRU5jbXh5eXZ2c05CUkpRaFQwNWRDdFFDNWtfd0Z3UWdKZV9vdS1VbHBVekE0aXlpYTdFemx5dk5CcE9KVlE?oc=5"
+    },
+    {
+     "titulo": "Golpe do falso emprego pelo Whats usa promessa de renda extra para atrair vítimas",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOHBLLXRjMmVmNURyTkRYeFpmd19wQlpzY2dDYjNoTWNaZVBtcW9tb2kwa3JubG1udFJQbU9Cc0k4VUVYYVBhNDZfaFpLNXBNaEpwR2NPUnFNenNfd3E0T3F6cUZwZ0l0YWwyS3RBNTc4RGR2Q0Q2RDBicFFnQWdBcW9SRm5iRWozSGRySFlwd1V6aE1FTmlTUlVkUENWa3U5S2l2NWJBdG5QVEY2dW9pR2h0cVBQclZBblNFRGtxSS13LUswRHc0OGxRbUZFdTFYWW05dWlPR2dzd9IB3wFBVV95cUxQYzBrbHJ6ak4tVDhIR2ZiREprb1RjVVNUQ1I4SzZJb05Pc0piT19yWm9iOG9HOGVma2JIMjlNRXJCQ28zdjBRYUN1SHU3Y1FleGZNay0tTzhwTEdYcTZBX1FtWEdwa3I5Z2NDTW1wcGR3eDRka0YtR3NRNU4yQ0pjWEJxeUJGeXBMTGhrWEhHT2pjd3RSSUt0SzVvb2hVRTFISUY0dkVOUWhfSVhPSXRkQW1GZF8xcEE0ZlNXQ240XzI3MVhjdjR1bFZ5aHNtem1UZDZJZk5YVVQxMzItVGZv?oc=5"
+    },
+    {
+     "titulo": "Santos muda votação que pode permitir SAF de R$ 2 bi",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4zaXRtSXptVFVnTmI4YjJ1UXNyakVPbXY3eDl6NGpnNTNTbXFFLTl6amNxVy1hM1RxdDlxMHVCb1ZySkdrNnlGaGJncllaRTVFV3RjOTRLRmhxaDctS2k5SWFDWlBGa2M5cjUwSlNBSm1sX2gtcnFsV3Jn?oc=5"
+    },
+    {
+     "titulo": "RB Leipzig x Manchester City hoje ao vivo: onde assistir ao jogo na TV e pela internet?",
+     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeVNIYU5hQjliQ0FhTXRMdmtLT2hlWUlRVTBRaTFyQkZkRVMwcTF1OWx4cDJlR3BWZ2ZIbDgzMTA3ckcwbXdYemFBblluZ3JVeS1POTk4SGF3OGE2N0JObjRwWEktN0tockY0RmpTZWFsUGZzVlc2SEhQcFVXcFJDb2JRZE41dHRPZmJJT09CazRJOEw1Ui1Ta3JsdnloOW95Y2pDQXhBcmRsVF9LN2hqTHBKS2xhT3Jkb2wySUs1ZXZsNllRXzhJYTQ5bzUwWFU5ZGU5dGg2bFJ1dUk?oc=5"
+    },
+    {
+     "titulo": "Guardiola plays golf with Fleetwood",
+     "link": "https://www.bbc.co.uk/sport/videos/crgj9qyynxyno?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "titulo": "Trilhos do Empreender abre vagas para cursos gratuitos",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOWkNJWnNJazRIMDFTU0REa2pSN0FwV2FUellCRWM5YXlremlIVDkwNUpMTHhpbG14TFNnRWZ1dXRLeFpTaFE3RTVWcVplZTluY2ZVRFR3TVNYME13NzRYS1JaejhZV3ZYb1lWSnlwOXcydkZSY0ZRTElPbXpqMDI2N0N6UGRDNVcxdENmWjd4LVhfQWQ4c3NxMjcyWW5rZw?oc=5"
+    },
+    {
+     "titulo": "Festival Britten celebra 50 anos da morte do compositor com quatro recitais em São Paulo",
+     "link": "https://jornal.usp.br/universidade/festival-britten-celebra-50-anos-da-morte-do-compositor-com-quatro-recitais-em-sao-paulo/"
+    },
+    {
+     "titulo": "A aposta brasileira em terapias e vacinas de RNA",
+     "link": "https://revistapesquisa.fapesp.br/aposta-brasileira-em-terapias-e-vacinas-de-rna/?utm_source=rss&utm_medium=rss&utm_campaign=aposta-brasileira-em-terapias-e-vacinas-de-rna"
+    },
+    {
+     "titulo": "A surprising discovery could help aging muscles repair themselves",
+     "link": "https://www.sciencedaily.com/releases/2026/11/261104005226.htm"
+    },
+    {
+     "titulo": "Google amplia demissões voluntárias para investir mais em IA",
+     "link": "https://tecnoblog.net/noticias/google-amplia-demissoes-voluntarias-para-investir-mais-em-ia/"
+    },
+    {
+     "titulo": "Brave vira alvo de processo na Justiça por recurso que abre textos para não-assinantes",
+     "link": "https://canaltech.com.br/software/brave-vira-alvo-de-processo-na-justica-por-recurso-que-abre-textos-para-nao-assinantes/"
+    },
+    {
+     "titulo": "Anvisa aprova primeiro medicamento de GLP-1 oral para obesidade",
+     "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/anvisa-aprova-primeiro-medicamento-de-glp-1-oral-para-obesidade"
+    },
+    {
+     "titulo": "Pé-de-Meia Universitário deve começar em 2027 para aluno do CadÚnico",
+     "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/pe-de-meia-universitario-deve-comecar-em-2027-para-aluno-do-cadunico"
+    },
+    {
+     "titulo": "Unesp 2027: vestibular tem 65.706 inscritos; veja 15 cursos mais concorridos",
+     "link": "https://g1.globo.com/sp/sao-carlos-regiao/educacao/noticia/2026/11/04/unesp-2027-vestibular-tem-65706-inscritos-veja-15-cursos-mais-concorridos.ghtml"
+    },
+    {
+     "titulo": "Estado destina R$ 100 milhões para recuperar rodovias de Mato Grosso do Sul",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOGp4b054MnpEZ19hdXpzMTdFN2dBWThDZTl4MElTRm43Q1pkem5wZ1BvZENJQ21PMVc1UVREQm1PeWdEbEh4cTZ4dm9HNGdwX3JsNm8zeEMxVmZ4Mjk5bjB6cExwNXdSRXB6Z1prZTdvOEJJaWY0ZUNpN0hSTDVEMlducDZMcjBmSEZjYnJadVNwT01Xc1RxR3VSQkQxd1RfQ1pFUUNjREs0YmtWQy1JMmRyNlh0UzJ0ZHZMd05PUEE1S09XMXpQaHpEVQ?oc=5"
+    },
+    {
+     "titulo": "PEC da Segurança Pública deve reforçar combate às facções",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWjN1MmQ4U2tTNlpqNjhvaG5wbmxfbUJpWElMTG5NeF90bXNQSDl6WENibEJGYl9qanFjbGpIdGFrY1lBYnVTYUM2eXVNOXJUSkowa1JsM1Uzd1lxbENoSW0yWWxlVkYtSFIycVRsNENacEFJa0RROFFQZFF5NDRkZWU3RjRyU3FGQkdFMnpNbHQ5a2R6ZktPX2JVZzFwZzRSV3VDQmtOaVpoa0dwdjVmT1JoRkxyUUx3b0RuRUEtRUZkRGlrUFhkTkFR0gHYAUFVX3lxTFBGOUdneFc2YzdvT0swVmluQzhlOWVMVTVCNWZTTzExcW1WQ2xYUklKeDB5NUlqelFHY0VzQmFRd2VoWWVxc3AtanRONG1xOUFQVDhHU00zLW5OXzdodS1EM2NzX2l6amg3bXhyR1BvYVpKMGRZaW5VeUhvMS1hdzV2c0w4SlBPTlhoazBrYVpoSmtWa1cyVXBLRkIzakYtQ3FBSm9HU0h0eUlwNmpQY2RqcmtDYk83RElQMDFOcE51NXpxNnAwaDFRVXR0UjhGWGxZNVpTOEx5OA?oc=5"
+    },
+    {
+     "titulo": "Primeira turma de Psicologia do litoral paulista celebra 50 anos de formação em Santos",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM0kwYXR5ckt1bUNha0VKQkFUbE9GU0tVZHRzOXFDd2thRU84TzBEeVRpdDRhSktDRnRrZ1RxMmxIazRmaUxuQ1dPV2JzTENOSk1vVlBpYXB4UEo0NThXR3R4VkdYbU5HWm5XMjlsVVVDcFZ3STgyRmJWalNVdjJhclFLOFRqTm5taEJXdElubHhrNDRkdzZjdEdhTG1lLU8x?oc=5"
+    },
+    {
+     "titulo": "Cães de Chernobyl apresentam alterações no DNA ligadas ao câncer, revela estudo",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPV2o2cFZGWW4tdEE5MmF6V0hhaVhRdy1obUFJVFVfcDRIcWw3Ykh1WDNqOWMxcXlIdDhLUkVBbG1rZFR5eUZJMjRJT1NNOGZuR2g0LXQ2VkFZbE1hblYxVFQyczVuNlF1Z1hkaXluRm9tdFBQaEJFUFQ2NTRZWjNMbQ?oc=5"
+    },
+    {
+     "titulo": "Secrets of the Negev Tombs",
+     "link": "https://www.biblicalarchaeology.org/daily/ancient-cultures/secrets-of-negev-tombs/"
+    },
+    {
+     "titulo": "Primeira Conferência Didaskalia propõe formação bíblica e preparação de lideranças",
+     "link": "https://goodprime.co/conferencia-didaskalia-formacao-biblica-liderancas-139772/"
+    },
+    {
+     "titulo": "Exposição do Museu de Arqueologia Bíblica do Unasp aproxima alunos da história",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPb2o2T011T0R4a1NxWk9lLXI4OUkwNEhQMFFYdDA1MXRMNXZXWS00MDJaOHAxX1ZNTURIUnNQR2l6NmFFc0VZd3NkWjMyOUVQdEdUdDFuS04zWEMwTnYyZHJaUktwZ2ZXWVRqUjNhZC0yLS00NkJUcV9ENzhKdUt5ZDFuZGNRT0RFY1Z0SVVRcGhNR25QVHdWdUFpRGt5eU0wOGNxMXVBa0pMOGllWGlpNnIzNG1qb0tTcTZLODh2MnJUTjhLeGc?oc=5"
+    },
+    {
+     "titulo": "Entenda a diferença entre o voto proporcional e o voto distrital misto",
+     "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/entenda-diferenca-entre-o-voto-proporcional-e-o-voto-distrital-misto"
+    },
+    {
+     "titulo": "Comissão aprova regras para convivência de marcas semelhantes",
+     "link": "https://www.camara.leg.br/noticias/1315747-comissao-aprova-regras-para-convivencia-de-marcas-semelhantes"
+    },
+    {
+     "titulo": "Áudio: Teresa Leitão defende votação do Orçamento até dezembro",
+     "link": "https://www12.senado.leg.br/noticias/audios/2026/11/teresa-leitao-defende-votacao-do-orcamento-ate-dezembro"
+    },
+    {
+     "titulo": "CNJ determina que certidões de óbito deverão trazer contexto da causa da morte em ação policial",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/04/cnj-determina-que-certidoes-de-obito-deverao-trazer-contexto-da-causa-da-morte-em-acao-policial.ghtml"
+    },
+    {
+     "titulo": "Decreto do fim da 6 X 1 deve ser publicado na 2ª feira, diz Luiz Marinho",
+     "link": "https://www.poder360.com.br/poder-governo/decreto-do-fim-da-6-x-1-deve-ser-publicado-na-2a-feira-diz-luiz-marinho/"
+    },
+    {
+     "titulo": "STJ condena desembargadora que teve acordo de delação cancelado a 14 anos de prisão",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/stj-condena-desembargadora-que-teve-acordo-de-delacao-cancelado-a-14-anos-de-prisao.shtml"
+    },
+    {
+     "titulo": "TRF3 afasta MP das bets e expõe a insegurança jurídica do governo",
+     "link": "https://www.jota.info/coberturas-especiais/jurisprudente/trf3-afasta-mp-das-bets-e-expoe-a-inseguranca-juridica-do-governo"
+    },
+    {
+     "titulo": "Renan Santos diz que republicanos derrotados 'têm nos Bolsonaro sua filial'",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdVRDeExwVENNWldfMDZHU09OaTFCb0NSNy1iem9FX2tDTHdaenlia0lMWUFPbzZJWnZtT2czYUVwOGk1Mkt6MzZFRWRoVk5oc1NVaEVhczNzVF9DN0FmRnhYdnBKYnZ5TGc3a0phZGVJQ09Cdk9FNng4TWFEU0dpZFpfQU82N3A2OHFZT0l1UW9TS2lBQTdlSV9sWklfMEVUX2x1VXdDZTdSaS05endsRnl6M2tqNUxmajZqVllWUzVGN2PSAcgBQVVfeXFMTTZyak5lRk5lbm9iZUVrX3pwQmNnSDZEalNzZDUweENwU29UYmZkd2g5bjg5UTFXTDc0bEdFYkFjblZ4R3FIeXRnXzU0NnRnRWI0Y2FmajVrWV9JM0tOR3VsTGNCX0JFQlEzRUxXczlSY0kzQzhfcWhSSmFLNm5za3Q1c1NQRURXcDhFUWFkRVBqc1h2ck5JRGhxMHUta2kwc0hVc1VlblRkVFZsa1JaWW5rZ0xuMFM5MjBNNU5WYUVfZGNkUEllYlA?oc=5"
+    },
+    {
+     "titulo": "Missão se une ao PDT em ação que questiona no STF vagas no Congresso",
+     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1zTUVmT1c2V29aQ2licFhUallISmV0b0pjVTNoMnlrVUNCTjlMUnlJaExyUm9RTmRsYTlUcVNlMk5lTXlueHJYT0MxVldYWEF4Z04xd2Q2Z0haVDh3NjI2cjBOV1BhTWVUOG5uZ2hJMjBxRDNzNFE?oc=5"
+    },
+    {
+     "titulo": "Trump sobre eleições: 'Provavelmente me darei bem com os democratas, a menos que queiram ser destrutivos '",
+     "link": "https://g1.globo.com/mundo/noticia/2026/11/04/trump-sobre-onda-azul-nas-eleicoes-provavelmente-me-darei-bem-com-os-democratas.ghtml"
+    },
+    {
+     "titulo": "Derrota de Trump pode frear política de intervenções na América Latina",
+     "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/derrota-de-trump-pode-frear-politica-de-intervencoes-na-america-latina"
+    },
+    {
+     "titulo": "5 razões para o desastre do partido de Trump nas eleições nos EUA",
+     "link": "https://www.bbc.com/portuguese/articles/cmd7q98x7944o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "titulo": "No fogo cruzado há quatro anos, Kherson, na Ucrânia, vive seis dias de paz",
+     "link": "https://www.dw.com/pt-br/no-fogo-cruzado-há-quatro-anos-kherson-na-ucrânia-vive-seis-dias-de-paz/a-79857538?maca=bra-rss-br-all-1030-xml-mrss"
+    },
+    {
+     "titulo": "Danish students join European protest wave against education funding cuts",
+     "link": "https://www.aljazeera.com/news/2026/11/4/danish-students-join-european-protest-wave-against-education-funding-cuts?traffic_source=rss"
+    },
+    {
+     "titulo": "Papamóvel de Leão XIV no Peru é uma Chevrolet S10 adaptada; veja o que mudou na picape",
+     "link": "https://g1.globo.com/carros/noticia/2026/11/04/papamovel-leao-xiv-peru.ghtml"
+    },
+    {
+     "titulo": "Copom decide nesta quarta-feira se corta ou mantém a Taxa Selic",
+     "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/copom-decide-nesta-quarta-feira-se-corta-ou-mantem-taxa-selic"
+    },
+    {
+     "titulo": "Lula consegue apoio da direita em 3 votações no Congresso e cria dilema para oposição",
+     "link": "https://www.infomoney.com.br/politica/lula-consegue-apoio-da-direita-em-3-votacoes-no-congresso-e-cria-dilema-para-oposicao/"
+    },
+    {
+     "titulo": "Quem são os maiores vencedores da história de Interlagos na Fórmula 1? Veja lista",
+     "link": "https://exame.com/esporte/quem-sao-os-maiores-vencedores-da-historia-de-interlagos-na-formula-1-veja-lista/"
+    },
+    {
+     "titulo": "Ouro salta mais de 3% com vitória democrata nas eleições dos EUA e geopolítica em foco",
+     "link": "https://www.moneytimes.com.br/ouro-4-11-26-lils/"
+    },
+    {
+     "titulo": "Democrats map out an agenda to address affordability and corruption after midterm sweep",
+     "link": "https://www.cnbc.com/2026/11/04/congressional-democrats-affordability-oversight.html"
+    },
+    {
+     "titulo": "Ibovespa sobe 1% e dólar cai após vitória democrata nos EUA e em dia de Copom",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdlpnX2hIRV9PLVB0NzY1UV9raV9KVXRWUkR2dUUtczdYRlJoWTdreU44OFBRaG5ZclpvS1BnRlE4a3RyWEtlSjhsczJ6QTBIWFRHSGlTd0MzcTZPejgzTE5xZUY1YU5FSHpDeUc1dlI4M0xnSHpvc0JDbHNMUGVNYTMwNmFqcm9JSEdjZU1sSlQ?oc=5"
+    },
+    {
+     "titulo": "Na corrida trilionária da IA: o ETF de chips que dispara 40% no ano na B3",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb0dRNzVsalNYVTZURmg0LTZlQVJyV19NZjJGVDdaN2t1SXBXTTlSRjVsWmpqQ3hQY1ZRY0pnLTRuS2tLOFdzLXRpVEFKNUFOWEhiVGw3YVVIdWRHSkJSXzhRRGFScksxb1BrckVpUldnNmcxSEJWWG5hRXdJR1FSaVVOdjNxNVhuaW05OU4tNEkxUDNCcVVkNnk0UEtzbkpBUkdoaldROWM2djR2WERIc1hn0gG3AUFVX3lxTE9OTHJZZTljQTNGYjMySHlNdVZlZXZMaXZRcE5QMV9ZOU1hQkNOYkZ3VE9xYWw2Nl8xN0ItQ3JjMFhCZjhhWV9mbURvbnFQYlNFUV8tZm1nRG1zaThWdXduVkNWb21GcDA2bXB3Qi0wLXNzOFlFcjYyV3lkSGpkeVdzelZUSWlJNEtxTHVYQ3NyVG1SVkhBcWt2TkZ6dkp1YUZ0OV8tbWFhNGdHSi1ndkVybFlFZFE3OA?oc=5"
+    },
+    {
+     "titulo": "Projeto prepara jovens da rede pública para o mercado de trabalho em Arapiraca/AL",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMDZ5SFhaczdvUU1Id3U3RW9MQTVFLUROQ3I4WnJBVUJtVTlJX3o5dUtRd1E3anFydE9hUVQ2UzNLR1Nob2VFUU96YjN2c3lRckszN3NiX0dfU0lSX0c3QjVFVlF4X3lsTWlmVy1IZmV0MHphS0psQ0QzV3pVYURUMEs4Z2R5aGVBVTlpMmJaQS1hbVFramJJWVgybWl2dHdjbXk1UWpxYmZ6QldNRk9WbnBBZXhiVGs5U3UzRkZKQk94dnhMQk4zSkNFR2VYS09XUDl4TGFHbw?oc=5"
+    },
+    {
+     "titulo": "Desemprego cai para 5,2% no Brasil e atinge menor nível para o terceiro trimestre desde 2012, aponta IBGE",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQWDBSVDMweElnbVlNOVlBR2FyQkVweTdMS1JOZncybU5lZUEzbThpWG9DV29YWWE4YmJjSkhZSWlxQi1YRFdlQlp6aGNqemFLVXYyV2dJTlN4M2NmWVRVM3NnYllJaHJ5ZW11X1JoLTRZV1ZnYURtdU1DUEdGMXByYnozWndGVExJWlJIa1RCSWt4S3Rlenl6WUR4YWRJd1c2VWxtTklnUUdNM0lrT19WMmNRbVVBYzNEb0dHdHlqNk9QeVNTZG1uNEtORXIwNGpMTzc1YkFQXzRFWERJ?oc=5"
+    },
+    {
+     "titulo": "Google ainda não descobriu como ganhar dinheiro com IA como ganha com a busca",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWjVESFNuZEhMUnBLbUhoYkE3c040dVM0SDdOZW83YzNialJzR2o3TFVRZ255QUtsZEFQeVlYNnNmT0V3WTJIS2xtR3JkbFNMWk1sSzNacThRYU53Uko5Ni0tSmtVeHpaSmNnUUxWXy1pNDNweHZuWlpTb1JEMEo2ZndEdldEN3BVOEl5WFVtZUx2RktZNDRKSGJ5M0c4OEVfbEZFczdHTzVlQVVFODRRMDlBdXU1UQ?oc=5"
+    },
+    {
+     "titulo": "Caxias analisa situação de goleiro do Santos",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOU2xMRUs2eWtSMTN0YVFrX1ROY01nS3Q4Rm0wdk1ZbjJOZnlNcjFZWmYwbk03a3dfR0ctOVVSbmFBM0pBcWo4OHhCQ2dvUjNLSUVXaFZjWTdROWdkdElCYWw5cTF5ZUlKX2lmN2ZMLXNQQ291b3lTSV9WNlYxNUFfd0Fn?oc=5"
+    },
+    {
+     "titulo": "Leipzig-Manchester City: curar feridas da Premier League na prova milionária",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTGRUT2lwRGpCQVM1UHVkYmZJbHljYXpLVzdMdFJCSm8tWHBWRHNuajdPNmo2NTRXTEV2dldsYllZQ1lNMG9XazRhcHB0eVhpeHZpUW1ZMUVjaXdybTBmS0tqWTY1YlA2Um9mVGNKSk5qWkFyVjlYbFlsZjczdDgwNXAyaTI?oc=5"
+    },
+    {
+     "titulo": "Inmet alerta para tempestades em quatro regiões nesta quarta e quinta",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTHdjSnRGWUdkTlh3VmdjZVNkY0p1bzFUN05yNmJiRU9QRlJiRUNJNkdoajlIUUV2TW9vSlgxUjFFLUJzZkFFVzlIU0xYdXZuaTlsMW9McjJrb1kyZFVoeG5NTS1wMU40TjU5cmxmVDM0M1VsbXJjVW5ic2hKLVU0MUM5OExjTTBnRHVQYVVXTHpic1o5RzNpbkN0N3FDMm1NMFhDaHFLSHJvSFYyZDR2VQ?oc=5"
+    },
+    {
+     "titulo": "Jean Cocteau é tema de jornada na USP nesta sexta-feira",
+     "link": "https://jornal.usp.br/cultura/jean-cocteau-e-tema-de-jornada-na-usp-nesta-sexta-feira/"
+    },
+    {
+     "titulo": "O desafio da educação afro-brasileira",
+     "link": "https://revistapesquisa.fapesp.br/o-desafio-da-educacao-afro-brasileira/?utm_source=rss&utm_medium=rss&utm_campaign=o-desafio-da-educacao-afro-brasileira"
+    },
+    {
+     "titulo": "Scientists may have finally explained why our brains and bodies are cross-wired",
+     "link": "https://www.sciencedaily.com/releases/2026/11/261103003146.htm"
+    },
+    {
+     "titulo": "Nova tecnologia deixa o Bluetooth 4 vezes mais rápido",
+     "link": "https://tecnoblog.net/noticias/nova-tecnologia-deixa-o-bluetooth-4-vezes-mais-rapido/"
+    },
+    {
+     "titulo": "Agora vai? Ecovias tem nova data para estreia do pedágio \"sem cancela\" na Imigrantes",
+     "link": "https://canaltech.com.br/carros/agora-vai-ecovias-tem-nova-data-para-estreia-do-pedagio-sem-cancela-na-imigrantes/"
+    },
+    {
+     "titulo": "Padilha defende proibição das bets e cita impacto no SUS",
+     "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/padilha-defende-proibicao-das-bets-e-cita-impacto-no-sus"
+    },
+    {
+     "titulo": "Enem 2026: MEC garante segurança da prova e mantém regras da redação",
+     "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/enem-2026-mec-garante-seguranca-da-prova-e-mantem-regras-da-redacao"
+    },
+    {
+     "titulo": "'Todo ano tem uma certa polêmica': ministro diz que redação do Enem reflete o que vivemos em nossa época; veja temas",
+     "link": "https://g1.globo.com/educacao/noticia/2026/11/04/ministro-da-educacao-temas-da-redacao-enem.ghtml"
+    },
+    {
+     "titulo": "Coinfra-Fieg entrega carta conjunta à ANTT pedindo melhorias em obras",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYU9ZZGZuQnFZdU1GOWpOUm5VNWh2a3hJS2xDYW5wZzZvS0M5dEdvaTVEZkx4WVpkRm1JaE9jZ1BSN1Y5RHZRUUQwWEZZZlpCMWxQTFFzLXNuQXdZVE1SMDZKRFVab01zUkJxMkdvblZYZ1l6MTJuMG9ieTh3bUV3bHcxTkJCb2x3UEtQZGRRWFhDNlQ5UkpCX1hXOG1qVDNab3RF?oc=5"
+    },
+    {
+     "titulo": "Senado aprova PEC da Segurança Pública, que cria o Sistema Único de Segurança Pública, sem redução da maioridade penal",
+     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNMVlQYWJhT1Q5SFZOa1pQdHEzYllwMXJGTURVVm9ZOGZTV0lKSkl0d2hyb2dmUjR3VEZVTGFoMkxpa2xuRHNERTczUnl1ek9ud24xcXJrbFhHT3dLc1c4SnhmMzNKeHVXckVsWnUtU2N1LXM5S3o3S3dSMkxOMkMyR3UxY3QwNkpTczNPU0gwZ0gzZVRSc29VVlFiN0VLNmpRU2xBU0VYME9PdENVNUQ5Qmlla083OGl5Tzd1MHV1N244UjFpR3RfTzNrb1EtR1JOWTRTTWhtcGFsUHFyRGhST29tSm1wMFlhRk0yLXZFbGg?oc=5"
+    },
+    {
+     "titulo": "Steve Jobs, empresário, “Seu tempo é limitado, então não o desperdice vivendo a vida de outra pessoa”, como agradar aos outros afeta nossas escolhas",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPU3lEcjZaTHhBeU4tZElkT1VrazByeU1fTnI4Yy15eDZNLUpEbkJ5TUN4QmZCenVXTzZUX1FOM2VKSVI1ZndtNzJJRzJWbW1tOGpDWjdpdnNmOEdZT0E5V3ZXREw1NmxSWWRwTC1Yd1hqcFdTQUpZMjF5U2NXejVDNHlCdTM3bGozbmduSkdXUjFaS1p0VHQ5MFJSMXdrZ3VyN1A0amRUMnV0MzByRERNMVQtcmszWUlaQjNaTDJBdnFnaWlYSHh4YmRmNjRxb2xYYk1R?oc=5"
+    },
+    {
+     "titulo": "Após serem encontrados no sangue humano, microplásticos chegam até o sêmen masculino e acendem alerta sobre possíveis riscos à fertilidade",
+     "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNNTdZMjlGSklRV1dqNzRYbFpNMlNfbklXM0ZDSmpUZzNJRTNkM3JtMnQzNldrVTJacER0SzJSR1ZIcFpTdF9QRURoY1FSQURpZEJ5UXpNOGVwcVpNaU9OSjlKR3Rrc1Q5a19wTG5qNGpOaVdzVVczWUJ6c0lwNVpGM1dLWUxRdzA4dXEwVXpCc2h3NGFaRXB1Rm40cHRwZWFTcjVyV0U4TlVldzNYQWUwSkFYWkhnZ1NCdVJocE1KdDNGMnBPMWMySDQ1V2V5V0VhZVN5OTFQMWhleUF2dmtrWDRlWnVDYklTN1NYQzdRTl9Rekh6ZjhESU5uTmVTZjZybm9JMW9ydTJFZzh5dmpiUDMxcEFSSDIwbHc?oc=5"
+    },
+    {
+     "titulo": "Another Bronze Age Temple in Kuwait",
+     "link": "https://www.biblicalarchaeology.org/daily/ancient-cultures/bronze-age-temple-kuwait/"
+    },
+    {
+     "titulo": "Sérgio Sacani e Rodrigo Silva: por que só a Bíblia precisa ser provada?",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9CcGVubGJtTER5UDF3SlpIOUxkT1JITWs2S0p6SkNMSmZpU0dDcW9MenVDLUktU3hYWXVJQTlfRXJTVUJHTENsRVJDc3dNcFQ5YXpDOEFlSm44U2JOSnl3aG11OW0tanlSbzJoUUFaMEVkUQ?oc=5"
+    },
+    {
+     "titulo": "Senado aprova PEC da Segurança Pública sem redução da maioridade penal",
+     "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/senado-aprova-pec-da-seguranca-publica-sem-reducao-da-maioridade-penal"
+    },
+    {
+     "titulo": "Comissão de Constituição e Justiça aprova regras para ações contra drogas em escolas",
+     "link": "https://www.camara.leg.br/noticias/1315793-comissao-de-constituicao-e-justica-aprova-regras-para-acoes-contra-drogas-em-escolas"
+    },
+    {
+     "titulo": "CCT aprova 41 concessões e renovações para emissoras de rádio",
+     "link": "https://www12.senado.leg.br/noticias/materias/2026/11/04/cct-aprova-41-concessoes-e-renovacoes-para-emissoras-de-radio"
+    },
+    {
+     "titulo": "É #FAKE vídeo de Lula dizendo 'para o povo trabalhador a prisão, para o bandido a proteção'; áudio foi editado",
+     "link": "https://g1.globo.com/fato-ou-fake/noticia/2026/11/04/e-fake-video-de-lula-dizendo-para-o-povo-trabalhador-a-prisao-para-o-bandido-a-protecao-audio-foi-editado.ghtml"
+    },
+    {
+     "titulo": "Lula fará live com André Janones na 5ª feira",
+     "link": "https://www.poder360.com.br/poder-eleicoes-2026/lula-fara-live-com-andre-janones-na-5a-feira/"
+    },
+    {
+     "titulo": "Rui Costa Pimenta, do PCO, diz ver perseguição a Flávio e defende legitimidade do bolsonarismo",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/rui-costa-pimenta-do-pco-diz-ver-perseguicao-a-flavio-e-defende-legitimidade-do-bolsonarismo.shtml"
+    },
+    {
+     "titulo": "Governo Lula alega risco à população e impõe sigilo a documentos sobre a MP das bets",
+     "link": "https://www.jota.info/executivo/governo-lula-alega-risco-a-populacao-e-impoe-sigilo-a-documentos-sobre-a-mp-das-bets"
+    },
+    {
+     "titulo": "Eleições 2026: Ficha de Renan Santos (MISSÃO)",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNll2VVlRd01idE1QOE03MVp0WkxqY3JCY2wzUk9URG1vU1IwMHdWc3gySllrd2F4NU43U1ljNnY4QXpzMS1TQ3M4R3FzTVNsV2d4d21scXM0SjBfcnF4Tm9nelczQVZjWkNVWTFEeEdxZjJNSkZSZHBHcEstbTNfM0FJUW5aSHF4UFdib25KaGVkTTJ4V0tVYXZmUXdDa0ZFRGROS2tINUE0UQ?oc=5"
+    },
+    {
+     "titulo": "Partido Missão vai ao STF para discutir distribuição de vagas no Legislativo",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQZ1RHTlhtRExPbi1XNDd4NlZNZ29nTzN4Rl9SOE45cmlFbWtuN1l2UTZTYUlzZGlBVWxjUk84WDJpbUpHc2V0dHRZMHV2ZzFLVnFaVjBYUGFSYlI2YlFCOFFaZEtNQTBwRGpOUDBGMkd3Vmk0V1ZGMTY4UFl2T0g0MGdNUDVLWVRxX3M4NGZGTDd2VzRVWkc3eXJibjZVeW1PRmpxbFNRVWEtVkxURVB2ZA?oc=5"
+    },
+    {
+     "titulo": "Presidente do Paraguai anuncia ressarcimento de clientes de banco e indica novo chefe para o BC",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/04/presidente-paraguai-anuncia-medidas-crise-bancaria.ghtml"
+    },
+    {
+     "titulo": "Guerra, economia, IA e casos de corrupção derrotam Trump nos EUA",
+     "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/guerra-economia-ia-e-casos-de-corrupcao-derrotam-trump-nos-eua"
+    },
+    {
+     "titulo": "Quem são os grandes vencedores das eleições americanas",
+     "link": "https://www.bbc.com/portuguese/articles/cmd7q9ep09z8o?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "titulo": "Ciberataques a supermercados já atingem 11 países da Europa",
+     "link": "https://www.dw.com/pt-br/ciberataques-a-supermercados-já-atingem-11-países-da-europa/a-79856789?maca=bra-rss-br-all-1030-xml-mrss"
+    },
+    {
+     "titulo": "Netanyahu bet on Trump – but both lost",
+     "link": "https://www.aljazeera.com/news/2026/11/4/netanyahu-bet-on-trump-but-both-lost?traffic_source=rss"
+    },
+    {
+     "titulo": "Brasil cria 121 mil empregos formais em setembro, queda de 43% na comparação com mesmo mês de 2025",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/04/brasil-cria-1213-mil-empregos-formais-em-setembro-queda-de-43percent-na-comparacao-com-mesmo-mes-de-2025.ghtml"
+    },
+    {
+     "titulo": "Dólar sobe 0,74% e aproxima-se de R$ 5,50 em dia de cautela fiscal",
+     "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/dolar-sobe-074-e-aproxima-se-de-r-550-em-dia-de-cautela-fiscal"
+    },
+    {
+     "titulo": "Regras da educação: entenda PL que altera carreira de professor em SP",
+     "link": "https://www.infomoney.com.br/brasil/regra-falta-e-mudanca-de-escola-entenda-pl-que-altera-carreira-de-professor-em-sp/"
+    },
+    {
+     "titulo": "Trilha de ‘Sentimento Louco’ traz música que Marília Mendonça fez para o filho Léo",
+     "link": "https://exame.com/pop/trilha-de-sentimento-louco-traz-musica-que-marilia-mendonca-fez-para-o-filho-leo/"
+    },
+    {
+     "titulo": "Rogério Marinho (PL) confirma candidatura para presidência do Senado, mas nega ‘rodízio’ com Tereza Cristina (PP)",
+     "link": "https://www.moneytimes.com.br/rogerio-marinho-diz-que-acordo-com-tereza-sera-fechado-no-futuro-e-evita-falar-em-rodizio/"
+    },
+    {
+     "titulo": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+     "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html"
+    },
+    {
+     "titulo": "Ibovespa Hoje Ao Vivo: Bolsa sobe e caminha para encerrar sequência de quedas",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNRUJYTTI5Nl9DYmk0a2YwR2VhRU1MZ25TenFpMlplSU5TdmxfdkhDNGxReHp5X2xjVEJ4cVRGOS1CY0J4SlZhRzlVY1JkdzhBZTZaa0NYeGNmUzhkMHQ2M0dCZzBaVjV1UmJQYy12b2NwdGxwZ3AtY0xzYnVfN3VJdzNLUlgxVHlOU3lDTVRrbw?oc=5"
+    },
+    {
+     "titulo": "UBS eleva preço-alvo da Mondelez para US$ 72 com margens mais fortes - Investing.com Brasil",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ3oxSVY3T3dCMlA4eUJmS2NVb0lNSTk5OVZ0ZnBHanI0OUhHcGVTTU0yZm4zbTNsSkpPdmJKVTBETllfNDNhd1ZtXzNiY1hxeW1DWFdlT204cktoQzhPVmp5dmVZVk1hX0V5VEFtb1JOVWV5WjJ3NHlQNjdEQ3pkWnQtTmtnNmVRdzBEZ05WRU1YaGk5TnZ1eXdsaWY2SUxnLXZoMGJqcWdzcHJ4TWVKNUMwZjVySEtobzkyVzAzYVk2SEJzTHZSQVVyT0E?oc=5"
+    },
+    {
+     "titulo": "Universidade de Bragança integrada num projeto nacional para integração de deficientes no mercado de trabalho",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2l4TXlqNkR3TmJLR21OenAtc3dobVhXSC14dmwxaHpWYkF4UERudVdTaFNESUxkdC11cks3cHpnWDRPbjJEM2xRbHM4anJNQ0kxSjFnTlRKOFlfVVliSzJZRC1qcmNjNW9Qc3M5OF82b2tvR1BlQ2kxenZfQU5IR1gwWlpUQmE1c09rY2lKQi1QeVF4enVmS09WYlJsU1gzZU5lLTlmWkdJSXJMOFZxN0dDLXF3RGc?oc=5"
+    },
+    {
+     "titulo": "Curso de petiscos incentiva renda extra para mães da Apae",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdGFLTjZ6YVg2blotMFd1Y0h3N2g0SWdINHR1UnRvdUZldEJjWXBUam1lbkdjUHNZZFdCanFJUGlIaXZ2STU5YmFXNi1Rc2cwZGNpMDhwd09BXzNSUHk3eUxjVzRfemVQNDc2R3M4dFVhRlRYcVVVR3dkOWcyY3Z4czdNc1NfbGZZYnpacHpHRTdackk4Y2dxR3hCa2F1REJFMUE2WVNBRkVsakJxRzlmdk0zOE9zaGVJaHJsd2FxTzhJYms2UWZSVGVyTm1iT0dYaEZHaEFGN3ROVUNTZjR0ejY3XzlXMjTSAecBQVVfeXFMTnRhS042emFYNm5aLTBXdWNIdzdoNElnSDR0dVJ0b3VGZXRCY1lwVGptZW5HY1BzWWRXQmpxSVBpSGl2dkk1OWJhVzYtUXNnMGRjaTA4cHdPQV8zUlB5N3lMY1c0X3plUDQ3NkdzOHRVYUZUWHFVVUd3ZDlnMmN2eHM3TXNTX2xmWWJ6WnB6R0U3WnJJOGNncUd4QmthdURCRTFBNllTQUZFbGpCcUc5ZnZNMzhPc2hlSWhybHdhcU84SWJrNlFmUlRlck5tYk9HWGhGR2hBRjd0TlVDU2Y0dHo2N185VzI0?oc=5"
+    },
+    {
+     "titulo": "Santos FC adia votação do novo Estatuto para depois das eleições presidenciais",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNbm1udC1lTWNZSjFGMWR5YkptVlVfem93Z3RnZzZydmlBSy1SVUNFb1ljT0sySHdMU2ZfczNVZUNiMnlEQWthbHNUWlJPeWtIM0w5Y0lhSkpVaFg0N2JNS0RyTlEwaFBUbDczQXUwWEdBSGFCMVhQMGpTUnUxbUl0WFRvZDBlTzcwVzN5anhzUGNIT3V4VzFyeHVSbHpXUUdYUm5iMXlQME95eWx0SGI0bTNB?oc=5"
+    },
+    {
+     "titulo": "Horário e onde assistir ao vivo RB Leipzig x Manchester City, pela Champions League",
+     "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZy04di04X0l1VlF0ZGRkQ2pLT1hucXhnRjBud0hzMW5Yb1VIckF6NDlzd19YYWthY0tFdmdCVWhJTm9TVWZaV1FjRFByb28zOUNlRF9kYWYyempEcW9yVUIwMkV5OV91NFlobVE1bUhvNUZRVHBRenQ5ZlJBX1Vfdm5qZEJxNE03bG42RlNsTjJEWTM3dkI4UkRUeWp1YlhERzJqSW1Pc3lQVUZiSFo3dEc3QkhFdW5xX3kySVREWTJBd3lDelBtalczSG9BTW1qVnp6UDFiandhOWtHMWtCSXN3UW5iMDBLQi1GaTlQSmdSdUtDdHU4bkxkWQ?oc=5"
+    },
+    {
+     "titulo": "Mega-Sena sorteia prêmio de R$ 46 milhões nesta quarta-feira",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQanhFNG9jeDd4WHByWEZsUWJTWXRqcl9MM1dQQXRNQmh3d1pLLXBEQkcwTDFJXzM2SEZSSUVlbnRfeGZfMDNMVDdoQXNKMUNWLWpBMl9LaG05YmZIMkFfbnlrQ3N2eGVyQnl5M1NNYWdQWVlpb000Y0psNW9sWnBRY1FwVUdiY2pDRERsT2RqbTdRWHFGOV9HS0xIdXhKaUQ0Qnh3?oc=5"
+    },
+    {
+     "titulo": "Prática chinesa que integra corpo e mente é tema de oficina na USP Ribeirão",
+     "link": "https://jornal.usp.br/campus-ribeirao-preto/pratica-chinesa-que-integra-corpo-e-mente-e-tema-de-oficina-na-usp-ribeirao/"
+    },
+    {
+     "titulo": "Permanent daylight saving time has a dark side, scientists warn",
+     "link": "https://www.sciencedaily.com/releases/2026/11/261103003157.htm"
+    },
+    {
+     "titulo": "Garmin Forerunner 70 com 5 ATM cai 38% com cupom no Mercado Livre",
+     "link": "https://tecnoblog.net/achados/garmin-forerunner-70-com-5-atm-cai-38-com-cupom-no-mercado-livre/"
+    },
+    {
+     "titulo": "Galaxy S26 com fone grátis fica mais barato que iPhone 17 em oferta",
+     "link": "https://canaltech.com.br/smartphone/galaxy-s26-com-fone-gratis-fica-mais-barato-que-iphone-17-em-oferta/"
+    },
+    {
+     "titulo": "Novembro Roxo alerta para cuidados com prematuros após alta",
+     "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/novembro-roxo-alerta-para-cuidados-com-prematuros-apos-alta"
+    },
+    {
+     "titulo": "Racismo e desigualdades afetam aprendizagem das crianças, diz estudo",
+     "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/racismo-e-desigualdades-afetam-aprendizagem-das-criancas-diz-estudo-0"
+    },
+    {
+     "titulo": "Inscrições para vestibular das Fatecs são prorrogadas; Vale e região têm 1,2 mil vagas para cursos gratuitos",
+     "link": "https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/11/04/inscricoes-para-vestibular-das-fatecs-sao-prorrogadas-vale-e-regiao-tem-12-mil-vagas-para-cursos-gratuitos.ghtml"
+    },
+    {
+     "titulo": "VLI investe R$ 60 mi em oficina ferroviária para ampliar operação entre Minas Gerais e Espírito Santo",
+     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFA3V2lDOHZKZnhIZVFNclZKX0tMczNfYWg1bjk3cjg0U3ZtTEs3eElZVlpZdGtyTHRsNlZKMnFsR1Z6d3NZWmQ0ekpCa2FkOENNTWY0eTJUdkFkc0NZZ0ZqR1dObk11N184V0l6OXJvZWN3Snc?oc=5"
+    },
+    {
+     "titulo": "Senado aprova PEC da Segurança Pública em dois turnos; texto será promulgado",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQkhmLUxzYnZiNnJSZU05SDkxRGtrUTEzZ2xiOEVtVHQtc1hJOXNsTS1yd2N1SkNVZ1NrbndlMTJYU1ZIRzhDUFREVXBTb2hFUXFKV0JGVHRVQW5VY0ZxZllLWnpWYzBBaWtGWjdoZ0tyRV85allwSWdqdWZFYUhsZk5yYWFDSkF0Vl9PWnhoaUxFNnI3RWZjd1dQbm1Wa1VVckpSWXd3UzdCTVk?oc=5"
+    },
+    {
+     "titulo": "Carlos Kirmayr e Daniel Brugin lançam livro \"Mais que Campeões\", em São Paulo",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPcUNVaHN6cmVCS29HcTduSkVpMnhJS21SYTBCQjF1Q3lhQU5BeG9RdG9KUWhTd3ZMNm9CcG1fU3JoYllaYWpJdXhHbDI0Yi1zQXA2NVUwVDVIc1J6Z2lXZTBFeEE5ZzNiWFpBeTJmSEpCUVVaRUVpNFRkTWp2VEh6SG9HOW81dmNDeFVyYy1mZVh2WnNNdElxQmh5dlRKanRPQnVQdDU5NVlHWnFweUVIeGR3?oc=5"
+    },
+    {
+     "titulo": "Quase metade dos usuários de canetas emagrecedoras diz ter ingerido menos bebidas alcoólicas durante o tratamento",
+     "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQV1JsOVh1ZWtCdEttRVpveHlnRDJuQ09nYlFiU0xtam9hRGItLWtYVEQtRFNiSVFoNXZDc0EzNlBtbXhyazBxWXJHSlhPT1FISHdhVndOYkZGWWEzTHNIV2FGSWpXTG0wdjd5T3VGckd5MW1nWnBEVFV2b21ORExkSFJ6QzItOFlLMDNlcDhMREdFX3lVV1hRZ3dXVkY2THlzSmJiTkRZQ0dTQTVKLU1pMmw4TW9mUnhBa0llWWF2LUJBRVpEX0VtbnVGM3VnVzNiMzRQM0QwaFdTdFlEbkFmTUFQYW5wcmRCaE1qLTBFeU5xN2pWdDM3MEtSZk8zZ9IBjAJBVV95cUxPbTdnUmZiSHpmcXFPRE9qVGRqMHVNX2lzZUZqcDRjZnBteTJMTzVjcVVieDNjRE1ia2t0ZFlnVERoekI5cXZTeUpqYmh4bzRZX0Q2elViRnctSHh1dk8tUE5rcmxIWkdla19mWjVoc0txN2tNQm1MUFBTLXRISVRwOXFhbm54MEpFNV9CT1BEb2VTdmJtZE9tM21ZdWV2UDkxVlNyNXQ5QWlzX1RtbEhraUROMzJfaHljeVhDZDFqeUtBcHFqOEEwSlJ0NU9FQlBxcXh6QzF1UDhWaGpENUhwYzZxWGRJMzI4N1VqYnVZNXZEN1ZYYlE5Z0NXa0U2NUFnV2h4dDJjaFRjWmx4?oc=5"
+    },
+    {
+     "titulo": "The Quest for the Historical Paul",
+     "link": "https://www.biblicalarchaeology.org/daily/people-cultures-in-the-bible/people-in-the-bible/the-quest-for-the-historical-paul/"
+    },
+    {
+     "titulo": "Sérgio Sacani e Rodrigo Silva: o Big Bang é obra de Deus?",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcTFRbU8waWhGaV9weWxYVTdNMG5McEZ1bWVRV0ZyWjNNOEFQOHJPUGxoS0pNbFBNX1AyWHZQUU84SEMwYmpLS01EZWEtMWhmSF95Y01uMEw1OEpQVk1XT1U4Z28xRzBfdVhnY3d2Y25zMGZ5N1duTDNnVlFERHdtdVFfWm00MkhmN0lHWFlqZlZScUhaX2pjM3FRdFUzcG9NdGc?oc=5"
+    },
+    {
+     "titulo": "Câmara de SP arquiva pedido de impeachment contra Ricardo Nunes",
+     "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/camara-de-sp-arquiva-pedido-de-impeachment-contra-ricardo-nunes"
+    },
+    {
+     "titulo": "Marco da Economia Digital garantirá recursos de longo prazo para tecnologia, dizem especialistas",
+     "link": "https://www.camara.leg.br/noticias/1315814-marco-da-economia-digital-garantira-recursos-de-longo-prazo-para-tecnologia-dizem-especialistas"
+    },
+    {
+     "titulo": "Áudio: Projeto de incentivo à inovação e à pesquisa em saúde vai à CAS",
+     "link": "https://www12.senado.leg.br/noticias/audios/2026/11/projeto-de-incentivo-a-inovacao-e-a-pesquisa-em-saude-vai-a-cas"
+    },
+    {
+     "titulo": "Rogério Marinho, do PL, lança candidatura à presidência do Senado",
+     "link": "https://g1.globo.com/politica/noticia/2026/11/04/rogerio-marinho-do-pl-lanca-candidatura-a-presidencia-do-senado.ghtml"
+    },
+    {
+     "titulo": "Só Lula e Alckmin estão garantidos no próximo governo, diz Marinho",
+     "link": "https://www.poder360.com.br/poder-governo/so-lula-e-alckmin-estao-garantidos-no-proximo-governo-diz-marinho/"
+    },
+    {
+     "titulo": "PL lança Rogério Marinho para a presidência do Senado com defesa de Flávio e anistia",
+     "link": "https://redir.folha.com.br/redir/online/poder/rss091/*https://www1.folha.uol.com.br/poder/2026/11/pl-lanca-rogerio-marinho-para-a-presidencia-do-senado.shtml"
+    },
+    {
+     "titulo": "Liminar impede Meta de coletar dados de sites jornalísticos para treinamento de IA",
+     "link": "https://www.jota.info/justica/liminar-impede-meta-de-coletar-dados-de-sites-jornalisticos-para-treinamento-de-ia"
+    },
+    {
+     "titulo": "Vereadora do MBL aponta “censura disfarçada” em desenhos bíblicos da Record",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbGZSY3hkMkRxQlBKQjFOZTZzT3pBbjhZWUxvMVhWRjRUYUxObXdKeFVrdC1pZ0VwbUY4bGx3U0E4OHBfcFNwcm81QXh6b0JuRGdsb0t6c0lJWU1rX0FaOVF5ckpwUERzVmFZd3pDRFV6RHprZDZwRWVpM1lIdlFpeW55ZUZRUDNYTVpTRlV2bXg2dXZ2Ujk0anVQdTRLc2wxenlUYkU5UmpuSEU?oc=5"
+    },
+    {
+     "titulo": "Missão se une ao PDT em ação para mudar cálculo de vagas no Congresso",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxONTJ3UXhKLU4yS0lpNE5PNG9HSUlGSzEtSm1QZmM4Ry1lRjd4dGRMMzJVcF9CRElxbzFzOUhaMWRad0UtMl9meHJtRVZFaXVNLVZXTUlUcU9FbTNNei1UcVF4bVVxLUk1N3BGUlY0N0F2ZUs3cGp2WjJQS3VtSlpXT3RUbWFWTTFQREJZTTBWNHJNbEsxV0dkS2hMQ3ZYYW1wWEt5MVZn?oc=5"
+    },
+    {
+     "titulo": "Paraguaios vão às ruas em protesto após quebra de banco digital e renúncia do presidente do BC",
+     "link": "https://g1.globo.com/economia/noticia/2026/11/04/paraguaios-vao-as-ruas-em-protesto-apos-quebra-de-banco-digital-e-renuncia-do-presidente-do-bc.ghtml"
+    },
+    {
+     "titulo": "Democratas conquistam Congresso em esmagadora rejeição a Trump",
+     "link": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/democratas-conquistam-congresso-em-esmagadora-rejeicao-trump"
+    },
+    {
+     "titulo": "Trump diz que vai reconhecer resultado da eleição, elogia democratas e critica republicanos",
+     "link": "https://www.bbc.com/portuguese/articles/cw146dj0regko?at_medium=RSS&at_campaign=rss"
+    },
+    {
+     "titulo": "Amapá assume papel relevante na rota do tráfico internacional",
+     "link": "https://www.dw.com/pt-br/amapá-assume-papel-relevante-na-rota-do-tráfico-internacional/a-79856004?maca=bra-rss-br-all-1030-xml-mrss"
+    },
+    {
+     "titulo": "Presidential hopeful Vance appears to question Iran war after polls debacle",
+     "link": "https://www.aljazeera.com/news/2026/11/4/presidential-hopeful-vance-appears-to-question-iran-war-after-polls-debacle?traffic_source=rss"
+    },
+    {
+     "titulo": "CEO da OpenAI muda nome para ‘Ram Altman’ no X após polêmica sobre memória de computadores",
+     "link": "https://g1.globo.com/tecnologia/noticia/2026/11/04/ceo-da-openai-muda-nome-para-ram-altman-no-x-apos-polemica-sobre-memoria-de-computadores.ghtml"
+    },
+    {
+     "titulo": "Do Irã ao comércio: como as eleições nos EUA afetam o restante do mundo",
+     "link": "https://www.infomoney.com.br/mundo/do-ira-ao-comercio-como-as-eleicoes-nos-eua-afetam-o-restante-do-mundo/"
+    },
+    {
+     "titulo": "Ele trabalhava cada vez mais e a empresa não crescia: os 5 hábitos que viram obstáculo, segundo CEO",
+     "link": "https://exame.com/carreira/ele-trabalhava-cada-vez-mais-e-a-empresa-nao-crescia-os-5-habitos-que-viram-obstaculo-segundo-ceo/"
+    },
+    {
+     "titulo": "Brasil tem fluxo cambial positivo de US$ 18,151 bilhões em outubro, maior do ano",
+     "link": "https://www.moneytimes.com.br/brasil-tem-fluxo-cambial-positivo-de-us18151-bilhoes-em-outubro-maior-do-ano-davs/"
+    },
+    {
+     "titulo": "Trump hammers Fox News, blaming network for GOP losses as ratings slide",
+     "link": "https://www.cnbc.com/2026/11/04/trump-fox-news-gop-midterm-losses.html"
+    },
+    {
+     "titulo": "Ibovespa recupera os 166 mil pontos, enquanto investidores aguardam decisão do Copom",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9yVVh6U1dMSUFvaXMwME04RVg1RGRucGd0MnlaSEFpWkJaZHlBR1B3UG9aOVkxUERWUE45djBVU0FEaGl5Z0c5aDUzMWJscmQzR2U5WDFpNENKYUlNaEdRNUdSRDgwWWUwWm8yZWM1V0QzWVgybXQ0Mw?oc=5"
+    },
+    {
+     "titulo": "Mercado de trabalho privado nos EUA acelera criação de vagas em outubro e supera projeções",
+     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMTFxYUViY3AtbW8xVG0tcS1PNVVXSlhmQlZmaVo2V3haZmRDS0FPYk9Vb09CUGMwUlZiUmNYN3NCRk5zaWZVSEhQZGNFVnozOHJGbE1qNTl0LWRZem9abjZtSjZwOWxOSDBuTWl5OUJtN190UXdtMy1Gd1d6dW8ydnFxUGpIWmdGczFxaEl5WHRzc3BLeklIdEpTTHpVS1RYMFJPYXkwRTgtdUp1cllJZEpCaW9uUHhSSDFPUE9uV2hTVDZC?oc=5"
+    },
+    {
+     "titulo": "Ipsos ISay: Como Ganhar Dinheiro Respondendo Pesquisas (Funciona De Verdade?) United States Midterm Election (ntk5mK48Eg)",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13MlpDVjdsV1lrVjN0LVdwTEFQeU4xVy1uZkpMRUJtQ29ndzZKLTMydlMyY05MLXl4NXlJSXhkd0JJeG0yTlc2SVZXTmVmTndCQlp1Nm84dmNDOEcyQ0pMU0V0UkxfUQ?oc=5"
+    },
+    {
+     "titulo": "Santos adia assembleia que abriria caminho para venda da SAF; entenda",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNeU5GNXJfbVlUc0xfNGhucXltUWhfekQtalB3X0Q3dFlDVFoyRXpiR3p4RmwwcWxrVlJjNm85RzY2NlNCZUtZZzczQXJCbjZoMnE1YUl1U2ZrdmtqQ1hNdWpWclN0WU1Vc3RFUDkwY0p6TlRiSTMxeDNOdzg2VWhQLVYwOTJMZGV2TW14V21HdUtKMHhnREVBcU9vZGxyNkRmOXRTZ0l1ZkRoYm5oZTJzRkE3YnR0b25SM2RaNGl6dw?oc=5"
+    }
+   ],
+   "roteiro": "CLARA: O sol tá meio tímido hoje, mas a gente tá com a energia em dia por aqui. tá no ar a edição de hoje do Radar Panorama, seu podcast diário de notícias, nesta quarta-feira, 4 de novembro de 2026.\nCLARA: Eu sou a Clara e tô pronta pra destrinchar o que rolou nas últimas vinte e quatro horas com você.\nANA: E eu sou a Ana. Vamos olhar os fatos com calma e colocar os pingos nos is.\nCLARA: Menina, o dia foi intenso em Brasília, viu.\nANA: Nem me fale. A política brasileira resolveu acelerar de vez.\nCLARA: Mas antes de entrar nas brigas pelo poder, vamos ao que domina os bastidores desde cedo.\nANA: A corrida pelo comando do Senado em dois mil e vinte e sete já começou a esquentar.\nCLARA: E olha que a eleição só acontece lá em fevereiro, mas o jogo já tá valendo.\nANA: O senador Rogério Marinho, que é do Partido Liberal e atual líder da oposição, oficializou a candidatura dele à presidência da Casa.\nCLARA: O PL vai ter a maior bancada de senadores na próxima legislatura, com vinte e nove cadeiras.\nANA: Exatamente. Só que a articulação exige muito mais do que isso.\nCLARA: Conta pra gente quantos votos precisa pra vencer essa parada, Ana.\nANA: Precisa da maioria absoluta, Clara. São quarenta e um votos no total, em votação secreta.\nCLARA: O Marinho vai ter que suar a camisa pra negociar com outros partidos.\nANA: E ele já disse que tá conversando com o Progressistas e com o Republicanos.\nCLARA: Só que no próprio campo da direita a situação tá meio embolada, né?\nANA: Pois é. Tem a senadora Tereza Cristina, do Progressistas, que também quer a presidência do Senado.\nCLARA: E pelo que o Marinho falou, eles são aliados e vão tentar um acordo mais pra frente.\nANA: A ideia é afunilar a disputa em janeiro, deixando só um nome da oposição para enfrentar o atual presidente, Davi Alcolumbre.\nCLARA: Alcolumbre que tá articulando a reeleição com toda a força na mesa.\nANA: Além do apoio do União Brasil, o grupo dele costuma atrair muita base governista e parlamentares do centro.\nCLARA: Marinho já avisou que vai tentar barrar o que chamou de tentativa de compra de consciência com verbas.\nANA: Ele também comentou sobre pautas polêmicas, como o projeto de anistia para os condenados pelos atos de oito de janeiro.\nCLARA: Ele disse que isso cabe ao Congresso analisar sem coação de outros Poderes.\nANA: Exato. E garantiu que, se vencer, não vai ser omisso em relação a eventuais crimes de responsabilidade de ministros do Supremo.\nCLARA: Um cenário que promete pegar fogo até fevereiro.\nANA: Vai ser uma das disputas mais acirradas dos últimos anos no Legislativo.\nCLARA: E no meio dessa briga toda, sobrou até pro presidente Lula.\nANA: Pois é. Marinho chamou o governo de inconsequente e criticou duramente a articulação digital do Planalto.\nCLARA: Disse que a comunicação com o deputado André Janones parece um exército de mentiras.\nANA: É uma estratégia de mobilização forte, mas que gera um desgaste institucional enorme.\n---\nCLARA: Enquanto o Congresso ferve com as eleições futuras, teve aprovação importante na área de segurança pública agora.\nANA: O Senado passou a Proposta de Emenda à Constituição da Segurança Pública em dois turnos nesta última terça-feira.\nCLARA: E foi por unanimidade, né?\nANA: Setenta e três votos no primeiro turno e setenta e cinco no segundo.\nCLARA: Impressionante ver um acordo desse tamanho em Brasília.\nANA: O texto busca reorganizar as forças públicas e endurecer penas para chefes de facções criminosas.\nCLARA: Era uma das grandes promessas do governo federal.\nANA: Inclusive, o presidente Lula já indicou que quer criar um ministério específico para a segurança após a promulgação.\nCLARA: Mas houve muita discussão sobre a maioridade penal, não foi?\nANA: Muita. Tentaram incluir emendas para reduzir a idade de responsabilidade criminal para dezesseis ou até quatorze anos.\nCLARA: E o que aconteceu com essas emendas?\nANA: O relator, senador Rogério Carvalho, conseguiu retirar o tema do texto principal por um placar bem apertado de trinta e oito a trinta e seis.\nCLARA: Ele preferiu jogar isso para tramitar em separado.\nANA: Exato. Para evitar que a PEC principal caísse ou voltasse pra Câmara dos Deputados.\nCLARA: Faz todo sentido do ponto de vista estratégico.\nANA: E ainda tem a discussão jurídica sobre a maioridade ser ou não cláusula pétrea na Constituição.\nCLARA: Ou seja, o debate tá longe de acabar.\nANA: Longe mesmo. A PEC agora segue para promulgação, mas a redução da maioridade vai continuar assombrando o parlamento.\n---\nCLARA: E por falar em saúde e hospitais, o presidente Lula foi parar no Sírio-Libanês em São Paulo.\nANA: Exates. Ele viajou nesta terça-feira para realizar exames de rotina previamente agendados.\nCLARA: O boletim médico saiu tarde da noite.\nANA: E disse que tá tudo dentro da normalidade, sob os cuidados do doutor Roberto Kalil Filho.\nCLARA: Ufa, menos mal. Ele já segue a agenda habitual.\nANA: Inclusive tem compromissos oficiais e conversas com aliados agendados para os próximos dias.\nCLARA: A saúde dos chefes de Estado sempre mexe com o mercado e com a política.\nANA: Qualquer oscilação gera muita especulação nos bastidores de Brasília.\n---\nCLARA: E pra fechar este bloco de política, tem novidade sobre o crédito fundiário na Câmara.\nANA: A Comissão da Amazônia aprovou o projeto que inclui povos tradicionais como beneficiários.\nCLARA: Quilombolas, indígenas e ciganos entram na jogada?\nANA: Exatamente. A proposta altera a lei de regularização fundiária para permitir financiamentos com recursos do fundo de terras.\nCLARA: Com direito a carência diferenciada e prazos longos.\nANA: Até quarenta anos de financiamento, com até quarenta e oito meses de carência, segundo o texto aprovado.\nCLARA: Sônia Guajajara foi a relatora e defendeu como reparação histórica.\nANA: O projeto ainda vai passar por outras comissões antes de chegar ao plenário da Câmara e depois ao Senado.\nCLARA: O campo tá sempre em disputa de terras e direitos.\nANA: É uma pauta que mexe com a estrutura agrária do país inteiro.\n---\nCLARA: Atravessando a fronteira, o terremoto político ontem foi nos Estados Unidos, viu?\nANA: Pois é.\nCLARA: A chamada onda azul dos democratas varreu as eleições de meio de mandato.\nANA: Eles conquistaram a maioria tanto na Câmara dos Representantes quanto no Senado americano.\nCLARA: Uma virada daquelas!\nANA: Foi uma derrota histórica para o Partido Republicano do presidente Donald Trump.\nCLARA: Até em estados conservadores, né?\nANA: Exatamente. No Texas, por exemplo, o democrata evangélico James Talarico derrotou o candidato apoiado por Trump.\nCLARA: O Texas virando página histórica.\nANA: O jornal The New York Times chegou a publicar que o estado talvez nunca mais seja o mesmo depois desse resultado.\nCLARA: E não foi só no Texas.\nANA: Não mesmo. Outros estados historicamente vermelhos, como Carolina do Sul, Kansas, Ohio e Iowa, também elegeram democratas.\nCLARA: Mas o que pesou tanto na cabeça do eleitor lá fora?\nANA: A insatisfação com a alta do custo de vida e as denúncias de corrupção pesaram, mas a guerra contra o Irã foi o grande estopim.\nCLARA: A população cansa de conflito desgastante.\nANA: Exato. O eleitorado usou a votação para mandar um recado direto contra o rumo do governo.\nCLARA: E como o Trump reagiu a essa lavada nas urnas?\nANA: Ele conversou com jornalistas e disse que provavelmente vai se dar bem com os democratas, a menos que eles queiram ser destru—\nCLARA: Peraí, destruição?\nANA: Então, como eu ia dizendo, destruidores. Ele usou essa palavra e lembrou que tem o poder de veto na Casa Branca.\nCLARA: O famoso Senhor Veto entrou em cena.\nANA: Entrou. Mas nas redes sociais ele desabafou e disse que os republicanos teriam vencido se o nome dele estivesse na cédula.\nCLARA: Típico do estilo dele.\nANA: Só que agora a realidade do governo muda completamente.\nCLARA: O que muda na prática com o Congresso de oposição?\nANA: Com a maioria na Câmara e no Senado, os democratas ganham força para abrir investigações sobre os dois primeiros anos do mandato.\nCLARA: Investigar o quê, exatamente?\nANA: Ações da política externa, a condução militar no Oriente Médio e intervenções na América Latina.\nCLARA: Inclusive aquela operação na Venezuela?\nANA: Exatamente. A captura de Nicolás Maduro e os ataques em Caracas entram na mira do parlamento.\nCLARA: Como o Itamaraty avalia esse novo cenário?\nANA: Diplomatas brasileiros veem essa derrota como um freio na chamada Doutrina Donroe, que buscava impor a dominância americana no continente.\nCLARA: Menos pressão sobre os vizinhos.\nANA: A leitura técnica é que a burocracia de Washington vai resistir a decisões intempestivas ou unilaterais de Trump a partir de agora.\nCLARA: Isso pode ajudar na questão das tarifas comerciais com o Brasil?\nANA: É o que se espera. Há espaço para negociações mais pragmáticas entre os dois países.\nCLARA: Outra pauta que ganha força no Congresso americano é a regulação das grandes empresas de tecnologia.\nANA: Há uma coalizão entre democratas e republicanos moderados disposta a aprovar regras mais rígidas para as redes.\nCLARA: O que alinha com os interesses do governo aqui no Brasil.\nANA: Sim, a regulação de plataformas digitais é uma pauta de interesse mútuo que vinha travada.\nCLARA: Enquanto Washington reajusta as velas, na Europa teve um respiro raro em meio ao conflito.\nANA: Você diz em Kherson, na Ucrânia?\nCLARA: Exato.\nANA: A cidade viveu seis dias seguidos de paz durante um cessar-fogo temporário para a evacuação de civis.\nCLARA: Poxa, seis dias sem bombas.\nANA: Foi uma trégua humanitária para retirar pessoas de Oleshky, na margem oposta do rio Dnipro, área ocupada pelas forças russas.\nCLARA: Um alívio no meio de tanta dor.\nANA: Sem dúvida. Por outro lado, na Dinamarca, o clima esquentou entre estudantes e o governo.\nCLARA: O pessoal foi pras ruas?\nANA: Milhares de estudantes protestaram contra a proposta de cortar o subsídio educacional para alunos vindos de famílias mais abastadas.\nCLARA: Faz parte de uma onda de manifestações na Europa.\nANA: É o impacto direto do arrocho orçamentário na educação pública de vários países do continente.\nCLARA: E cruzando de volta pro nosso continente, o Paraguai tá enfrentando uma tempestade financeira daquelas.\nANA: Nossa, a situação lá em Assunção tá muito delicada.\nCLARA: O que foi que aconteceu com o banco digital Ueno?\nANA: O banco entrou em colapso e acabou dissolvido, deixando quase três milhões de clientes sem acesso ao próprio dinheiro.\nCLARA: Três milhões de pessoas num país de sete milhões?\nANA: Para o Paraguai é um abalo sistêmico gigantesco.\nCLARA: As ruas lotaram de protestos.\nANA: Clientes revoltados foram às portas das agências e prédios governamentais exigir o resgate das economias.\nCLARA: A crise derrubou até o chefe do Banco Central de lá!\nANA: O presidente do Banco Central paraguaio, Carlos Carvallo, renunciou ao cargo na terça-feira.\nCLARA: E o presidente Santiago Peña fez alguma coisa?\nANA: Anunciou um pacote de medidas e enviou um projeto ao Congresso para começar a pagar o ressarcimento dos correntistas ainda nesta semana.\nCLARA: Uma corrida contra o tempo para conter a desconfiança no sistema financeiro.\nANA: Exato. Quando a confiança no sistema bancário rui, a economia inteira treme junto.\n\n---\n\nCLARA: Falando em economia tremer, hoje o dia é de expectativa pura no Brasil por causa do Copom.\nANA: Reunião decisiva para os juros básicos da economia.\nCLARA: A Selic tá em treze vírgula setenta e cinco por cento ao ano.\nANA: E o mercado financeiro tá dividido sobre o próximo passo do Banco Central.\nCLARA: A maioria dos analistas consultados no boletim Focus previa um corte de zero vírgula vinte e cinco ponto percentual.\nANA: Só que o dólar alto e as projeções de inflação subindo fizeram muitos economistas mudarem de ideia nas últimas horas.\nCLARA: Preferem manutenção?\nANA: Defendem que o Banco Central segure a taxa Selic onde está para evitar um estresse ainda maior no câmbio e na trajetória fiscal.\nCLARA: Aliás, o mercado internacional hoje influenciou em cheio os nossos ativos.\nANA: A vitória dos democratas nos Estados Unidos mexeu com os mercados globais desde cedo.\nCLARA: A bolsa brasileira reagiu bem.\nANA: O Ibovespa subiu mais de um por cento na parte da manhã, interrompendo uma sequência de seis quedas consecutivas.\nCLARA: Voltou pros cento e sessenta e seis mil pontos.\nANA: Voltou. E o dólar comercial deu uma aliviada, caindo e encostando na casa dos cinco reais e cinquenta centavos.\nCLARA: O investidor leu a derrota de Trump como um sinal de que haverá mais freios orçamentários em Washington.\nANA: Exatamente. Isso reduziu os rendimentos dos títulos da dívida americana, o que abriu espaço para alívio nos emergentes como o Brasil.\nCLARA: Mas a oscilação foi tão brusca de manhã que o Tesouro Direto teve que travar a plataforma!\nANA: Foi mesmo.\nCLARA: Ué, fechou as portas temporariamente?\nANA: O Tesouro suspendeu as vendas por algumas horas porque as taxas caíram de forma muito rápida na abertura do mercado.\nCLARA: Tipo o título IPCA mais 2032?\nANA: Ele mesmo. A taxa recuou de oito vírgula zero quatro por cento para sete vírgula noventa e três no início do dia.\nCLARA: Quando varia rápido demais assim, eles travam para reajustar as cotações com segurança.\nANA: Exato. É um mecanismo normal de proteção para o pequeno investidor não fechar negócio com preços defasados.\nCLARA: E o fluxo de dólares pro país bateu recorde no mês passado.\nANA: O Banco Central divulgou que a entrada líquida de moeda estrangeira em outubro passou de dezoito bilhões de dó—\nCLARA: Peraí, dezoito bilhões num mês só?\nANA: Então, como eu ia dizendo, dezoito bilhões de dólares. Dezoito vírgula cento e cinquenta e um bilhões de dólares, para ser mais precisa.\nCLARA: Foi o maior resultado mensal do ano, né?\nANA: Foi sim. O maior valor registrado em dois mil e vinte e seis.\nCLARA: Entrou dinheiro por onde?\nANA: Tanto pelo canal financeiro, com investimentos diretos e em carteira, quanto pelo comércio exterior com exportações.\nCLARA: Isso mostra que o gringo não tirou o pé do Brasil.\nANA: Analistas do mercado financeiro reforçam que, apesar do ruído fiscal interno, o Brasil continua atrativo por ter recursos estratégicos.\nCLARA: Comida, energia e minérios.\nANA: Exatamente. O país reúne temas que o mundo inteiro precisa comprar agora.\nCLARA: E nas cotações globais, o ouro deu uma disparada histórica hoje.\nANA: Salto de mais de três por cento em um único dia.\nCLARA: Bateu marca impressionante?\nANA: Ultrapassou os quatro mil dólares por onça-troy e fechou na casa dos quatro mil e setenta e três dólares.\nCLARA: E a prata foi no embalo.\nANA: Subiu mais de cinco por cento, cotada acima dos cinquenta e dois dólares.\nCLARA: Investidores correndo pro ouro por segurança.\nANA: A combinação de dólar mais fraco no mundo e incerteza política em Washington impulsionou a busca por proteção em metais preciosos.\nCLARA: No campo do agronegócio nacional, a atenção tá voltada para a sanidade animal em Santa Catarina.\nANA: O Ministério da Agricultura confirmou o quarto foco da doença de Newcastle no estado.\nCLARA: Foi registrado onde?\nANA: Numa criação comercial em Nova Erechim, no oeste catarinense.\nCLARA: Essa doença afeta as aves, né?\nANA: É um vírus altamente contagioso entre frangos e aves em geral. Por causa da emergência sanitária, o Brasil sofre restrições de exportação desde outubro.\nCLARA: As autoridades tão correndo pra isolar os focos.\nANA: Todas as medidas de contenção e sacrifício sanitário no perímetro foram ativadas para proteger o rebanho avícola do país.\nCLARA: Já na produção aquática, o número veio positivo demais.\nANA: A aquicultura em águas da União bateu recorde histórico na última safra consolidada.\nCLARA: Quantas toneladas foram produzidas?\nANA: Foram quase cento e oitenta mil toneladas de peixes e moluscos cultivados em rios, represas e áreas marinhas federais.\nCLARA: Alta de mais de vinte por cento!\nANA: Exato. A criação de tilápia em reservatórios de usinas hidrelétricas puxou quase noventa e cinco por cento desse volume todo.\nCLARA: E movimentou um valor bruto enorme.\nANA: Mais de um bilhão e quatrocentos milhões de reais, com destaque para a produção em São Paulo e Minas Gerais.\nCLARA: Mostra o potencial imenso dos nossos reservatórios de água doce.\nANA: Sem dúvida. É geração de renda e alimento aproveitando a infraestrutura pública já existente.\nCLARA: E pra encerrar esse bloco de mercados com uma curiosidade de tecnologia, você viu a provocação no X do criador do ChatGPT?\nANA: Vi sim!\nCLARA: O Sam Altman trocou o nome dele na rede social para Ram Altman.\nANA: R-A-M, fazendo piada com a memória RAM das máquinas!\nCLARA: Ele se meteu numa polêmica danada ao sugerir que a memória dos computadores pessoais deveria ser desviada para os data centers de inteligência artificial.\nANA: Falou num podcast que, com a escassez de componentes no mercado, a IA deveria ter prioridade sobre notebooks e celulares do cidadão comum.\nCLARA: A internet não perdoou, né?\nANA: O pessoal reagiu mal porque isso significaria encarecer e suprimir tecnologia para os consumidores finais.\nCLARA: Ele teve que ironizar mudando a foto e o nome do perfil.\nANA: Mas brincadeiras à parte, a demanda por chips de inteligência artificial tá movimentando bilhões nas bolsas de valores.\nCLARA: Tem fundo no Brasil surfando essa onda?\nANA: Tem sim. Um fundo de índice de semicondutores negociado na B3 acumula alta de quarenta por cento só neste ano.\nCLARA: Quarenta por cento no ano!\nANA: A corrida global por capacidade de processamento de dados colocou as fabricantes de microchips no topo das carteiras de investimento.\nCLARA: Uma loucura essa febre da inteligência artificial.\nANA: E que promete continuar mexendo com o mercado financeiro por um bom tempo.\n---\nCLARA: E já que o mercado de trabalho tá no radar, vamos falar do Brasil?\nANA: O IBGE acabou de divulgar os dados da Pesquisa Nacional por Amostra de Domicílios Contínua.\nCLARA: A famosa Pnad.\nANA: Ela mesma. A taxa de desemprego caiu para cinco vírgula dois por cento no trimestre encerrado em setembro.\nCLARA: É o menor nível pro período desde duas mil e doze, né?\nANA: Exatamente. Há quatorze anos não víamos um número tão baixo no terceiro trimestre.\nCLARA: Que notícia boa.\nANA: Mostra que a economia continuou gerando postos de trabalho ao longo do ano.\nCLARA: Mas tem um porém?\nANA: Tem uma nuance. Quando a gente olha para o mês de setembro isolado, o ritmo de novas contratações formais deu uma leve desacelerada.\nCLARA: Como assim?\nANA: As empresas continuam contratando, mas numa velocidade menor do que no início do ano.\nCLARA: Tipo pisar suavemente no freio?\nANA: Perfeito. A economia ainda tá criando vagas, só que sem aquele ritmo acelerado de antes.\nCLARA: E o rendimento do trabalhador?\nANA: A massa de rendimento real subiu, o que ajuda no poder de compra das famílias.\nCLARA: Especialmente nas periferias.\nANA: Sim. Hoje é o Dia da Favela, e dados sobre renda mostram que o trabalho autônomo e pequenos negócios foram decisivos nas comunidades.\nCLARA: A quebrada empreende muito!\nANA: Demais. A busca por renda própria cresceu bastante nos territórios urbanos.\nCLARA: E lá fora, o emprego também surpreendeu?\nANA: Nos Estados Unidos, o relatório do setor privado veio acima das estimativas em outubro.\nCLARA: Criaram mais vagas do que esperavam?\nANA: Muito mais. O setor privado americano contratou acima de todas as projeções de Wall Street.\nCLARA: O que indica uma economia americana ainda forte.\nANA: Forte, mas que deixa o Banco Central americano em alerta sobre a velocidade dos cortes de juros.\nCLARA: Se a economia esquenta, a inflação pode voltar.\nANA: Exato. É por isso que os analistas acompanham esses dados com lupa.\nCLARA: Agora, nem tudo no mundo do trabalho são flores. Tem um alerta sério sobre golpe na internet.\nANA: Aquela promessa de vaga pelo WhatsApp?\nCLARA: Essa mesma. A polícia alertou sobre criminosos usando ofertas de renda extra rápida para atrair vítimas.\nANA: Poxa, que absurdo.\nCLARA: Prometem ganhos fáceis só pra curtir vídeos ou avaliar produtos.\nANA: E como funciona a armadilha?\nCLARA: A pessoa entra no grupo, faz tarefas simples e recebe uns trocados pra achar que é de verdade.\nANA: É o famoso anzol.\nCLARA: Daí eles dizem que para liberar tarefas com pagamentos maiores, a pessoa precisa fazer um PIX de depósito pré—\nANA: Peraí, pagar para trabalhar?\nCLARA: Então, como eu ia dizendo, a pessoa faz o PIX achando que vai receber o triplo e o golpista some.\nANA: Se a oferta exige dinheiro antecipado, desconfie na hora.\nCLARA: Nenhuma empresa séria cobra taxa para contratar!\nANA: Jamais. Todo cuidado é pouco com mensagens prometendo renda fácil.\nCLARA: Em compensação, tem muita iniciativa bacana focada em qualificação real.\nANA: Como a oficina organizada para mães de alunos da Apae.\nCLARA: Um curso de petiscos artesanais.\nANA: Isso. A ideia é ensinar receitas simples para que essas mães possam vender e complementar o orçamento.\nCLARA: Isso transforma vidas.\nANA: Sem dúvida. Garante autonomia financeira para quem precisa cuidar dos filhos em casa.\nCLARA: E também tem projetos preparando jovens de escolas públicas pro mercado.\nANA: Como o programa em Arapiraca, em Alagoas, capacitando estudantes para entrevistas e tecnologia.\nCLARA: É o caminho certo.\nANA: Educação e qualificação prática são as melhores ferramentas para abrir portas.\n\n---\n\nCLARA: Mudando pro futebol, os bastidores da Vila Belmiro tão agitados!\nANA: O Santos tomou uma decisão política importante nas últimas horas.\nCLARA: Adiou a votação do novo estatuto?\nANA: Adiou tanto a votação da reforma estatutária quanto a assembleia sobre a criação da SAF do clube.\nCLARA: Aquela SAF avaliada em dois bilhões de reais?\nANA: Essa mesma. A diretoria transferiu as votações para depois das eleições presidenciais do Santos.\nCLARA: Por que adiaram agora?\nANA: O clima no Conselho Deliberativo esquentou. A oposição alegou que votar um tema tão crucial perto da eleição traria insegurança.\nCLARA: Faz todo sentido.\nANA: A avaliação foi de que uma transição desse porte precisa de estabilidade, não de disputa eleitoral.\nCLARA: E o torcedor fica no aguardo.\nANA: A prioridade agora é o desempenho do time em campo.\nCLARA: Falando no elenco, tem movimentação na base.\nANA: O Caxias tá analisando contratar por empréstimo um dos goleiros do Peixe para a próxima temporada.\nCLARA: Buscar espaço e rodagem é fundamental garotada.\nANA: Com certeza. Ter minutos em campo num estadual forte vale mais do que ficar no banco.\nCLARA: E da Vila Belmiro a gente cruza o oceano pra Champions League.\nANA: Hoje tem Leipzig e Manchester City na Alemanha.\nCLARA: O City precisa reagir, né?\nANA: Exato. O time do Pep Guardiola vem oscilando na Premier League e busca reabilitação.\nCLARA: A Champions é o palco perfeito pra curar as feridas.\nANA: O City quer a vitória fora de casa para recuperar a confiança do grupo.\nCLARA: O Leipzig em casa é encardido.\nANA: É uma equipe muito intensa. Se o City vacilar na transição, pode ter problemas.\nCLARA: E por falar no Guardiola, você viu o folga dele?\nANA: O Pep trocou a prancheta pelos tacos de golfe!\nCLARA: Foi jogar nos Emirados Árabes?\nANA: Isso. Participou de um torneio em Abu Dhabi ao lado do britânico Tommy Fleetwood.\nCLARA: Fleetwood que é número oito do mundo no golfe!\nANA: Imagina a pressão do Guardiola no gramado verde sem a bola nos pés!\nCLARA: Dizem que ele é tão detalhista no golfe quanto na beira do campo.\nANA: Ele disse que o golfe ajuda a espairecer a mente e tirar o estresse do futebol. A tacada exige foco abso—\nCLARA: Tipo a precisão de um passe do De Bruyne?\nANA: Então, como eu ia dizendo, foco absoluto para não mandar a bolinha na areia.\nCLARA: O mestre do tiquitaque arriscando um hole in one!\nANA: Se a precisão do futebol servir pro golfe, o Fleetwood tava bem acompanhado.\n\n---\n\nCLARA: E trazendo as notícias pra nossa região, atenção moradores de Rio Claro!\nANA: O Inmet emitiu um aviso amarelo de perigo potencial para tempestades.\nCLARA: Atinge nossa região hoje?\nANA: Válido para esta quarta e quinta-feira em quatro regiões paulistas, incluindo Rio Claro e Piracicaba.\nCLARA: Chuva forte com vento?\nANA: Pancadas de até cinquenta milímetros por dia, com rajadas de vento de até vinte metros por segundo.\nCLARA: Caramba, vento forte.\nANA: Há risco de queda de galhos, alagamentos pontuais e descargas elétricas.\nCLARA: O que a Defesa Civil recomenda?\nANA: Não se abrigar debaixo de árvores e evitar estacionar perto de torres ou placas.\nCLARA: E em caso de emergência?\nANA: Ligar para a Defesa Civil no 199 ou para os Bombeiros no 193.\nCLARA: Prevenção é tudo nessa época.\nANA: Com certeza. Ficar atento aos alertas ajuda a evitar imprevistos.\nCLARA: Mudando para capacitação em Rio Claro, o projeto Trilhos do Empreender abriu inscrições!\nANA: Ótima notícia para quem busca recolocação ou quer empreender.\nCLARA: Cursos totalmente gratuitos.\nANA: Sim. Vagas para formações em gestão, atendimento ao cliente e vendas.\nCLARA: Onde o pessoal se inscreve?\nANA: Presencialmente no centro de qualificação da cidade ou pelo site da prefeitura.\nCLARA: E as vagas preenchem rápido, né?\nANA: Voam. Quem tiver interesse precisa garantir logo a inscrição.\nCLARA: É a oportunidade perfeita pra se preparar pro fim do ano.\nANA: Capacitação técnica é o melhor caminho para aumentar a renda familiar por aqui.\nCLARA: E pra fechar com expectativa boa, hoje tem sorteio milionário da Mega-Sena!\nANA: O prêmio acumulou em quarenta e seis milhões de reais para esta quarta-feira.\nCLARA: Quarenta e seis milhões dá pra realizar bastante sonho.\nANA: Dá para mudar a vida de uma família inteira.\nCLARA: Até que horas dá pra apostar nas lotéricas de Rio Claro?\nANA: Apostas abertas até as sete da noite nas lotéricas ou pelo aplicativo da Caixa.\nCLARA: Quem sabe o novo milionário não sai da nossa cidade?\nANA: Sonhar não custa nada, e a aposta simples custa cinco reais.\nCLARA: Fica a torcida para os nossos ouvintes!\n---\nCLARA: E já que a gente tava falando de saúde no bloco anterior, a Anvisa acabou de liberar uma grande novidade para quem lida com obesidade.\nANA: A aprovação do primeiro remédio de GLP-1 em formato oral para o tratamento da doença no Brasil.\nCLARA: Até agora só existia a versão em injeção subcutânea, né?\nANA: Exatamente. A agência reguladora deu o sinal verde para o comprimido da semaglutida, vendido com o nome comercial de Wegovy.\nCLARA: E como vai funcionar a dosagem em comprimidos?\nANA: O paciente toma uma vez ao dia, em jejum, com um pouco de água, e precisa esperar pelo menos trinta minutos antes de comer ou tomar qualquer outra coisa.\nCLARA: Tem um passo a passo para a quantidade do remédio?\nANA: Sim, é um processo gradual. O tratamento começa com um vírgula cinco miligramas, avança para quatro e nove, até chegar à dose de manutenção de vinte e cinco miligramas diários.\nCLARA: Isso dá uma liberdade enorme para o paciente que tem pavor de agulha.\nANA: Sem dúvida. O estudo clínico de fase três que embasou a aprovação mostrou que os participantes perderam em média mais de treze por cento do peso corporal ao longo de sessenta e quatro semanas.\nCLARA: É uma redução bastante expressiva.\nANA: E o tratamento ainda trouxe melhorias importantes em vários marcadores de saúde cardiometabólica, ajudando a controlar riscos associados à obesidade crônica.\nCLARA: Falando em saúde e tecnologia, tem uma descoberta curiosa sobre os nossos músculos conforme a gente envelhece.\nANA: Cientistas identificaram um composto capaz de transformar uma proteína natural de reparo muscular em uma versão superpotente.\nCLARA: O famoso Super HGF?\nANA: Esse mesmo. Nos testes iniciais com camundongos, essa substância mais do que duplicou a capacidade de ligação da proteína e ainda protegeu o tecido contra danos químicos da idade.\nCLARA: Quem sabe isso não vira um tratamento contra a perda de massa muscular no futuro, né?\nANA: É o objetivo principal da pesquisa, embora ainda leve tempo para chegar aos seres humanos.\nCLARA: Enquanto a ciência avança nos laboratórios, a educação brasileira já se movimenta para os grandes exames do fim de semana.\nANA: O ministro da Educação garantiu a segurança e a lisura do Enem para os próximos dois domingos, reunindo mais de cinco milhões de inscritos.\nCLARA: Depois da polêmica do ano passado com vazamento de questões nas redes sociais, o cuidado redobrado é essencial.\nANA: Ele também comentou sobre a expectativa em torno do tema da redação deste ano, reforçando que os assuntos sempre refletem o que a sociedade está vivendo no momento.\nCLARA: E por falar em universidade, a Unesp divulgou os números do vestibular de dois mil e vinte e sete.\nANA: Foram mais de sessenta e cinco mil inscritos disputando quase seis mil vagas em cento e trinta e sete cursos.\nCLARA: O curso de medicina em Botucatu continua sendo o mais concorrido, né?\nANA: Lidera com folga, registrando mais de duzentos e onze candidatos por vaga.\nCLARA: É uma concorrência de tirar o fôlego.\nANA: E o Ministério da Educação já projeta para dois mil e sete a chegada do Pé-de-Meia Universitário.\nCLARA: Uma extensão daquele programa de permanência escolar agora voltado para estudantes do ensino superior que estão no CadÚnico.\nANA: A ideia é garantir apoio financeiro para que alunos de baixa renda consigam concluir a graduação nas universidades públicas.\n---\nCLARA: Cruzando agora para o universo da fé e da teologia, uma escavação no sul de Israel trouxe revelações surpreendentes.\nANA: Pesquisadores exploraram um antigo complexo de tumbas e locais de culto na região desértica do Neguev.\nCLARA: Era uma área de grande circulação de caravanas antigas, né?\nANA: Cruzada por rotas comerciais importantes que ligavam o Egito, a península Arábica e a região da antiga Judéia.\nCLARA: E o que os arqueólogos encontraram dentro dessas estruturas de pedra?\nANA: Descobriram restos mortais de pelo menos cinquenta e seis pessoas, além de artefatos ligados ao comércio de incensos aromáticos.\nCLARA: Como jarras de alabastro e queimadores de incenso.\nANA: Exato. E o mais interessante é que, embora muitos sepultamentos fossem de homens — os prováveis comerciantes da época —, uma quantidade expressiva era de jovens mulheres.\nCLARA: Mostrando que a dinâmica daquela região era bem mais complexa do que se imaginava.\nANA: Os achados ajudam a mapear com precisão as redes de comércio e circulação de pessoas no primeiro milênio antes de Cristo.\nCLARA: E para quem se interessa por debates entre ciência e espiritualidade, tem evento reunindo grandes nomes para discutir essas fronteiras.\nANA: Discussões sobre como o conhecimento científico e a narrativa bíblica dialogam na compreensão da origem do universo.\nCLARA: É sempre um tema que desperta muita curiosidade do público.\nANA: Porque toca nas grandes questões existenciais da humanidade, unindo arqueologia, filosofia e teologia num mesmo espaço de reflexão.\n---\nCLARA: E para fechar o nosso episódio de hoje, vamos com a rodada rápida de notícias que agitaram o cenário nacional e internacional nestas últimas vinte e quatro horas.\nANA: O presidente Lula passou por exames de rotina no Hospital Sírio-Libanês em São Paulo, e o boletim médico confirmou que os resultados estão dentro da normalidade.\nCLARA: Na política de Brasília, a Comissão de Direitos Humanos do Senado aprovou o projeto que cria uma política nacional de saúde mental para idosos no Sistema Único de Saúde.\nANA: E na Câmara dos Deputados, a bancada do Partido Liberal se dividiu sobre lançar ou não um candidato próprio à presidência da casa legislativa.\nCLARA: No noticiário internacional, o governo brasileiro avalia que a vitória dos democratas nas eleições americanas de meio de mandato pode trazer dificuldades para a política externa de Donald Trump.\nANA: O próprio Trump declarou que espera se dar bem com os democratas, mas lembrou que mantém o poder de veto sobre qualquer iniciativa do Congresso.\nCLARA: No setor financeiro, Santa Catarina confirmou o quarto foco da doença de Newcastle em uma granja, mantendo restrições para as exportações de carne de frango.\nANA: E o Tesouro Direto chegou a ficar temporariamente fora do air em um dia de fortes oscilações e taxas em queda nos títulos públicos.\n---\nCLARA: E agora a gente chega naquele momento em que um conceito espinhoso do dia vira algo simples de entender.\nANA: A expressão que marcou o noticiário econômico e político desta quarta-feira é política monetária restritiva.\nCLARA: Conta pra gente como isso funciona no dia a dia.\nANA: Imagina que a economia brasileira é como um carro andando numa rodovia cheia de curvas e com o motor superaquecido pela inflação alta. Para evitar que o veículo pegue fogo ou cause um acidente, o Banco Central puxa o freio de mão. Esse freio é a taxa básica de juros alta. Quando o juro sobe demais, fica mais caro pegar dinheiro emprestado, as empresas investem menos e as famílias compram menos, o que esfria o consumo e obriga os preços a pararem de subir. Só que o motorista precisa calcular muito bem a força desse freio, porque se puxar com força excessiva, o carro pode parar de vez no meio da pista e travar o crescimento do país.\nCLARA: Ótima analogia. Ficou cristalino.\nANA: É exatamente o dilema que o Copom enfrenta nas reuniões de política econômica.\n---\nCLARA: Assim a gente encerra a edição de hoje do nosso podcast, navegando por tanta informação importante que moldou estas vinte e quatro horas.\nANA: E lembrando que amanhã a gente tá de volta para desvendar cada detalhe do que acontece no Brasil e no mundo. Até lá.",
+   "manchete": "Rogério Marinho lança candidatura à presidência do Senado",
+   "audio_ok": true,
+   "apresentadores": [
+    "Ana",
+    "Clara"
+   ]
+  }
+ ]
+}
