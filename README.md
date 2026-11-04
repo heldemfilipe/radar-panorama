@@ -6,9 +6,9 @@ economia, mundo, esportes, ciência e fé.
 
 ## 📲 Ouça no Telegram
 
-Quer só ouvir as notícias? Abra o bot
-[@RadarPanoramaBot](https://t.me/RadarPanoramaBot) no Telegram e toque em
-**Iniciar**.
+Quer só ouvir as notícias? Entre no canal
+[@RadarPanoramaB](https://t.me/RadarPanoramaB) no Telegram: o episódio chega lá
+todo dia.
 
 ## O que tem no episódio
 
@@ -142,7 +142,7 @@ radar-panorama/
    |---|---|
    | `GEMINI_API_KEY` | chave do https://aistudio.google.com/apikey |
    | `TELEGRAM_BOT_TOKEN` | token do bot novo |
-   | `TELEGRAM_CHAT_ID` | seu chat_id |
+   | `TELEGRAM_CHAT_ID` | seu chat_id, ou, pra publicar num canal, o `@usuario` do canal (o bot precisa ser administrador dele, com permissão de publicar) |
 
 3. **Teste sem esperar o horário:** aba **Actions** → "Radar Panorama Diário" →
    **Run workflow**. Em ~1 min o áudio chega no Telegram.
