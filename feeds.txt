@@ -41,6 +41,7 @@ https://www.jota.info/feed | JOTA | 24h | politica
 gnews: MBL "Movimento Brasil Livre" | Google Notícias (MBL) | 48h | politica
 gnews: "Partido Missão" | Google Notícias (Partido Missão) | 72h | politica
 
+gnews: "Renan Santos" | Google Notícias (Renan Santos) | 48h | politica
 # ---- Geopolítica ----
 https://g1.globo.com/rss/g1/mundo/ | G1 Mundo | 24h | geopolitica
 https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml | Agência Brasil Internacional | 24h | geopolitica
@@ -91,6 +92,7 @@ gnews: "segurança pública" OR "cibersegurança" | Google Notícias (segurança
 gnews: filosofia OR "comportamento humano" psicologia estudo | Google Notícias (filosofia e comportamento) | 72h | ciencia
 gnews: saúde estudo pesquisa descoberta | Google Notícias (saúde) | 48h | ciencia
 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCStl60ypbkN7IjZi9SxYBcg | Revista Valete | 168h | ciencia
 # ---- Fé & Teologia (poucas notícias por semana: janelas longas) ----
 https://www.biblicalarchaeology.org/feed/ | Biblical Archaeology Society | 168h | fe
 https://www.gospelprime.com.br/feed/ | Gospel Prime | 168h | fe

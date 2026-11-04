@@ -260,8 +260,8 @@ def _ler_fonte(url: str, nome: str, horas: int) -> tuple[list, str, bool]:
         via_gnews = dominio == "news.google.com"
         return parsed.entries, nome or parsed.feed.get("title", url), via_gnews
     except requests.RequestException as e:
-        if dominio == "news.google.com":
-            raise
+        if dominio in ("news.google.com", "youtube.com"):
+            raise  # "site:youtube.com" traria vídeo de qualquer canal
         # Site bloqueou o IP do runner: busca as notícias dele pelo Google
         # Notícias, que não bloqueia o GitHub.
         print(f"[AVISO] {nome or url}: {e} -> usando Google Notícias", file=sys.stderr)
