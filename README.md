@@ -4,6 +4,12 @@ Mesmo pipeline do `radar-tech` (RSS → Gemini → edge-tts → Telegram), rodan
 graça no GitHub Actions, mas com outro foco: um panorama do dia em política,
 economia, mundo, esportes, ciência e fé.
 
+## 📲 Ouça no Telegram
+
+Quer só ouvir as notícias? Abra o bot
+[@RadarPanoramaBot](https://t.me/RadarPanoramaBot) no Telegram e toque em
+**Iniciar**.
+
 ## O que tem no episódio
 
 Bate-papo de ~10 a 12 minutos entre dois apresentadores (Ana, Clara e Leo, em
