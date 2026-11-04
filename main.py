@@ -761,9 +761,17 @@ SOAR HUMANO, NÃO LOCUTOR (a parte mais importante do roteiro):
   de verdade ao que o outro disse); várias de 10 a 25 palavras; e só
   de vez em quando uma de até 45 palavras (na manchete). Pelo menos 1 em cada
   4 falas é curta. NUNCA duas falas seguidas com mais de 35 palavras.
+  META CONCRETA: num episódio de uns 60 falas, pelo menos 16 têm no máximo 6
+  palavras ("hum, sério?", "peraí, quanto?", "nossa, não sabia", "faz
+  sentido", "e aí?") e a maioria das outras fica abaixo de 25. Cada notícia
+  precisa de pelo menos 1 reação curta do outro antes de seguir.
 - Quem fala pode ser cortado: interrompa uma frase no meio com "—" e deixe o
   outro entrar; quem foi cortado retoma depois ("Então, como eu ia dizendo,
-  ..."). Faça isso de 3 a 5 vezes no episódio.
+  ..."). Faça isso de 4 a 6 vezes no episódio: a fala interrompida TERMINA
+  com "—" e a seguinte começa pela reação de quem cortou. Escreva essas
+  interrupções de verdade; não as deixe só como intenção.
+- Antes de entregar, confira mentalmente: pelo menos 1 em cada 4 falas curta,
+  pelo menos 4 interrupções com "—" e nenhuma fala acima de 45 palavras.
 - Marcas de fala real, sem exagero: hesitação ("é... tipo", "como é que eu
   falo"), autocorreção ("quer dizer, não, peraí"), pensar em voz alta, e
   palavrinhas como "olha", "cara", "pô", "nossa", "hum", "ué", "sei lá".
