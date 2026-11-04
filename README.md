@@ -40,14 +40,15 @@ chamada só o episódio saía com ~6 min):
 
 Cada parte recebe só as notícias das suas áreas, o roteiro das partes
 anteriores (pra continuar a conversa sem repetir) e uma meta de palavras. Parte
-que sai curta demais ganha uma reescrita mais aprofundada. O log do Actions
-mostra `[PARTE n/5] X palavras` pra você acompanhar.
+com menos da metade da meta ganha uma reescrita mais aprofundada. O log do
+Actions mostra `[PARTE n/5] X palavras` pra você acompanhar. Também mostra qual
+cota do Gemini estourou em cada 429 (`[...PerDay...]` é o limite do dia).
 
 | Variável | Padrão | Pra quê |
 |---|---|---|
 | `EPISODE_MINUTES` | `30` | duração alvo |
 | `WORDS_PER_MIN` | `200` | velocidade real do áudio (1344 palavras deram 6min18) |
-| `MAX_FULL_ARTICLES` | `14` | notícias com a matéria completa enviada ao Gemini |
+| `MAX_FULL_ARTICLES` | `17` | notícias com a matéria completa enviada ao Gemini (os blocos se revezam nas vagas, e links do Google Notícias são convertidos pro link do veículo) |
 
 Pra mudar a duração, defina `EPISODE_MINUTES` no `news.yml` (bloco `env`). Um
 episódio longo leva mais tempo: ~5 chamadas ao Gemini e ~200 falas de voz, por
@@ -153,6 +154,26 @@ radar-panorama/
    9h15 e 12h15. Se só a voz falhar, o canal não recebe nada até a nova
    tentativa, que refaz o áudio sem gerar outro roteiro e manda as notas junto.
 
+## Horário: agendador externo
+
+O cron do GitHub tem chegado entre 12h e 16h (BRT), não às 6h15. Pra cumprir o
+horário, um serviço externo dispara o workflow; os crons ficam de reserva, e
+disparo agendado só gera episódio se o de hoje ainda não saiu.
+
+1. **Token do GitHub:** Settings → Developer settings → Fine-grained tokens →
+   Generate. Dê acesso só aos repos `radar-panorama` e `radar-tech`, com a
+   permissão **Actions: Read and write**. Quando ele vencer, os episódios voltam
+   a depender do cron do GitHub.
+2. **Em [cron-job.org](https://cron-job.org)**, crie um job com fuso
+   `America/Sao_Paulo`, às **5h30, 9h30 e 12h30** (o episódio longo leva ~40 min):
+   - URL: `https://api.github.com/repos/heldemfilipe/radar-panorama/actions/workflows/news.yml/dispatches`
+   - Método: `POST`
+   - Cabeçalhos: `Authorization: Bearer <token>` e
+     `Accept: application/vnd.github+json`
+   - Corpo: `{"ref":"main","inputs":{"repescagem":"true"}}`
+
+O histórico de execução do job deve mostrar a resposta `204`.
+
 ## Editar fontes
 
 Edite o `feeds.txt` e dê push. O 4º campo de cada linha é a tag do bloco
@@ -165,8 +186,8 @@ Dica: `gnews:` é o jeito mais fácil de cobrir um tema novo, ex.:
 
 ## Observações
 
-- **Horário não é exato.** O cron do Actions atrasa na fila; o gatilho é às 6h15
-  (BRT) pra entrega cair por volta das 6h30.
+- **Sem o agendador externo o horário atrasa muito.** Veja "Horário: agendador
+  externo" acima.
 - **Dê `git pull` antes de mexer no repo.** O bot commita o `historico.json` todo
   dia; sem o pull, seu push é recusado.
 - **Sem notícias repetidas.** Só as notícias faladas contam como usadas: as que

@@ -60,16 +60,20 @@ gnews: dólar Ibovespa fechamento bolsa | Google Notícias (mercado) | 24h | eco
 gnews: ETF ações empresas lucro crescimento | Google Notícias (ações e ETFs) | 48h | economia
 
 # ---- Trabalho & Renda: empregos novos e onde está o dinheiro ----
+https://g1.globo.com/rss/g1/trabalho-e-carreira/ | G1 Trabalho e Carreira | 48h | trabalho
 gnews: "novas profissões" OR "profissões do futuro" OR "mercado de trabalho" | Google Notícias (empregos) | 72h | trabalho
 gnews: renda trabalhador "salário médio" OR "rendimento médio" IBGE | Google Notícias (renda) | 72h | trabalho
 gnews: "renda extra" OR "ganhar dinheiro" OR "setores que mais crescem" | Google Notícias (oportunidades) | 72h | trabalho
 
 # ---- Esportes: Santos FC e Manchester City ----
+https://ge.globo.com/rss/ge/futebol/times/santos/ | ge Santos | 24h | esportes
+https://www.theguardian.com/football/manchestercity/rss | The Guardian (Man City) | 24h | esportes
 gnews: "Santos FC" | Google Notícias (Santos) | 24h | esportes
 gnews: "Manchester City" | Google Notícias (Man City) | 24h | esportes
 https://feeds.bbci.co.uk/sport/football/teams/manchester-city/rss.xml | BBC Sport (Man City) | 24h | esportes
 
 # ---- Rio Claro & Região ----
+https://www.jornalcidade.net/feed/ | Jornal Cidade (Rio Claro) | 48h | local
 gnews: "Rio Claro" SP | Google Notícias (Rio Claro) | 48h | local
 
 # ---- Ciência & Sociedade: tecnologia, infraestrutura, ciência, saúde, educação,
