@@ -12,7 +12,7 @@ Quer só ouvir as notícias? Abra o bot
 
 ## O que tem no episódio
 
-Bate-papo de ~10 a 12 minutos entre dois apresentadores (Ana, Clara e Leo, em
+Bate-papo de ~30 minutos entre dois apresentadores (Ana, Clara e Leo, em
 rodízio), com os blocos:
 
 | Bloco | Tag no `feeds.txt` | Obrigatório? |
@@ -26,6 +26,34 @@ rodízio), com os blocos:
 | 🔬 Ciência & Sociedade (tecnologia, infraestrutura, saúde, educação, segurança, filosofia, comportamento) | `ciencia` | sim |
 | ✝️ Fé & Teologia (teologia pentecostal, comentários bíblicos, arqueologia bíblica) | `fe` | quando houver |
 | ⚡ Rodada rápida + 📖 Termo do dia | — | sim |
+
+### Duração do episódio
+
+O roteiro é escrito em **5 partes**, uma chamada ao Gemini por parte (numa
+chamada só o episódio saía com ~6 min):
+
+1. Abertura, manchete e Política
+2. Geopolítica e Economia & Mercados
+3. Trabalho & Renda, Esportes e Rio Claro
+4. Ciência & Sociedade e Fé & Teologia
+5. Rodada rápida, termo do dia e encerramento
+
+Cada parte recebe só as notícias das suas áreas, o roteiro das partes
+anteriores (pra continuar a conversa sem repetir) e uma meta de palavras. Parte
+que sai curta demais ganha uma reescrita mais aprofundada. O log do Actions
+mostra `[PARTE n/5] X palavras` pra você acompanhar.
+
+| Variável | Padrão | Pra quê |
+|---|---|---|
+| `EPISODE_MINUTES` | `30` | duração alvo |
+| `WORDS_PER_MIN` | `200` | velocidade real do áudio (1344 palavras deram 6min18) |
+| `MAX_FULL_ARTICLES` | `14` | notícias com a matéria completa enviada ao Gemini |
+
+Pra mudar a duração, defina `EPISODE_MINUTES` no `news.yml` (bloco `env`). Um
+episódio longo leva mais tempo: ~5 chamadas ao Gemini e ~200 falas de voz, por
+isso o workflow tem `timeout-minutes: 75`.
+
+As notas no Telegram listam só as notícias que foram de fato faladas.
 
 Regras que o roteiro segue:
 

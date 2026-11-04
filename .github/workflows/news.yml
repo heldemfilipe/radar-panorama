@@ -27,7 +27,7 @@ jobs:
     # Fixo no 24.04: o ubuntu-latest vira Ubuntu 26 em 19/10/2026 e o
     # setup-python pode demorar a ter Python 3.12 pronto pra ele.
     runs-on: ubuntu-24.04
-    timeout-minutes: 20   # folga pros retries do Gemini (rodadas de até 3 min de espera)
+    timeout-minutes: 75   # episódio longo: ~5 chamadas ao Gemini + ~200 falas de voz
     steps:
       - uses: actions/checkout@v5
 

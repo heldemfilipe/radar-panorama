@@ -64,7 +64,13 @@ HISTORY_DAYS = int(os.environ.get("HISTORY_DAYS", "3"))
 BRT = timezone(timedelta(hours=-3))
 # Quantas notícias em destaque têm a matéria completa baixada e enviada ao
 # Gemini (o RSS só traz ~500 caracteres, pouco pra explicar direito).
-MAX_FULL_ARTICLES = int(os.environ.get("MAX_FULL_ARTICLES", "6"))
+MAX_FULL_ARTICLES = int(os.environ.get("MAX_FULL_ARTICLES", "14"))
+# Duração alvo do episódio. O roteiro é escrito em partes (uma chamada ao
+# Gemini por parte) porque uma resposta só sai curta: ~6 min foi o que veio
+# quando se pedia 10 a 12. WORDS_PER_MIN é a velocidade real medida do áudio
+# (falas aparadas, rate +5%/+10%): 1344 palavras deram 6min18.
+EPISODE_MINUTES = int(os.environ.get("EPISODE_MINUTES", "30"))
+WORDS_PER_MIN = int(os.environ.get("WORDS_PER_MIN", "200"))
 PRONUNCIA_FILE = os.environ.get("PRONUNCIA_FILE", "pronuncia.txt")
 # Preenchidos pelo workflow. REPESCAGEM: execução extra do fim da manhã, que
 # só gera episódio se o das 06:15 não saiu. PROXIMA_TENTATIVA: horário (BRT)
@@ -650,6 +656,8 @@ def anexar_materias_completas(items: list[dict]) -> None:
         if len(texto) < 400:
             continue
         it["full_text"] = texto[:4000]
+        if feitas == 0:
+            it["manchete"] = True  # a melhor notícia do dia: vira a manchete
         feitas += 1
         if k is None:
             assuntos.append((tokens, 1))
@@ -761,17 +769,17 @@ SOAR HUMANO, NÃO LOCUTOR (a parte mais importante do roteiro):
   de verdade ao que o outro disse); várias de 10 a 25 palavras; e só
   de vez em quando uma de até 45 palavras (na manchete). Pelo menos 1 em cada
   4 falas é curta. NUNCA duas falas seguidas com mais de 35 palavras.
-  META CONCRETA: num episódio de uns 60 falas, pelo menos 16 têm no máximo 6
+  META CONCRETA: a cada 60 falas, pelo menos 16 têm no máximo 6
   palavras ("hum, sério?", "peraí, quanto?", "nossa, não sabia", "faz
   sentido", "e aí?") e a maioria das outras fica abaixo de 25. Cada notícia
   precisa de pelo menos 1 reação curta do outro antes de seguir.
 - Quem fala pode ser cortado: interrompa uma frase no meio com "—" e deixe o
   outro entrar; quem foi cortado retoma depois ("Então, como eu ia dizendo,
-  ..."). Faça isso de 4 a 6 vezes no episódio: a fala interrompida TERMINA
+  ..."). Faça isso uma vez a cada 15 falas, mais ou menos: a fala interrompida TERMINA
   com "—" e a seguinte começa pela reação de quem cortou. Escreva essas
   interrupções de verdade; não as deixe só como intenção.
 - Antes de entregar, confira mentalmente: pelo menos 1 em cada 4 falas curta,
-  pelo menos 4 interrupções com "—" e nenhuma fala acima de 45 palavras.
+  pelo menos 1 interrupção a cada 15 falas, com "—" e nenhuma fala acima de 45 palavras.
 - Marcas de fala real, sem exagero: hesitação ("é... tipo", "como é que eu
   falo"), autocorreção ("quer dizer, não, peraí"), pensar em voz alta, e
   palavrinhas como "olha", "cara", "pô", "nossa", "hum", "ué", "sei lá".
@@ -808,25 +816,25 @@ PORTUGUÊS NATURAL (muito importante):
 
 FORMATO OBRIGATÓRIO: cada fala em sua própria linha, começando com "{M}:" ou
 "{H}:". Entre um bloco e outro do episódio, uma linha contendo apenas ---
-(vira uma pausa no áudio). O --- aparece SÓ na troca de bloco (umas 8 vezes
+(vira uma pausa no áudio). O --- aparece SÓ na troca de bloco (umas 14 vezes
 no episódio inteiro), NUNCA entre uma fala e outra do mesmo bloco — mesmo que
 os episódios anteriores tenham feito diferente. Nenhuma outra linha fora desse formato — sem
 títulos, sem markdown, sem asteriscos, sem emojis, sem rubricas como (risos)
 ou [vinheta].
 
-ESTRUTURA DO EPISÓDIO (10 a 12 minutos, nesta ordem):
+ESTRUTURA DO EPISÓDIO (uns {EPISODE_MINUTES} minutos, nesta ordem):
 1. ABERTURA (curta): vinheta do programa com dia e data, {H} e {M} se
    apresentam, e um gancho do assunto principal pra prender a atenção.
-2. MANCHETE DO DIA (uns 2 minutos): o assunto mais importante, a fundo. Cubra
+2. MANCHETE DO DIA (uns 4 minutos): o assunto mais importante, a fundo. Cubra
    o que aconteceu, o contexto (como chegamos aqui), por que importa e o que
    muda na prática pra quem ouve. Use os fatos da MATÉRIA COMPLETA quando ela
    existir.
-3. POLÍTICA: de 1 a 3 notícias de política brasileira — Congresso, governo
+3. POLÍTICA: de 3 a 5 notícias de política brasileira — Congresso, governo
    federal, STF/TSE, eleições, partidos e movimentos (como MBL e Partido
    Missão, quando houver notícia). Prefira o que mexe com a vida de quem ouve.
-4. GEOPOLÍTICA: de 1 a 3 notícias do cenário internacional — guerras, acordos,
+4. GEOPOLÍTICA: de 3 a 5 notícias do cenário internacional — guerras, acordos,
    eleições e disputas entre países, relações do Brasil com o mundo.
-5. ECONOMIA & MERCADOS: de 1 a 3 notícias de economia do Brasil e do mundo —
+5. ECONOMIA & MERCADOS: de 3 a 5 notícias de economia do Brasil e do mundo —
    juros, inflação, câmbio, bolsas e índices, resultados de empresas, ETFs.
    REGRA: informe, não aconselhe. Nunca diga que o ouvinte deve comprar,
    vender ou investir em algo; conte o que aconteceu e o que analistas dizem,
@@ -840,7 +848,7 @@ ESTRUTURA DO EPISÓDIO (10 a 12 minutos, nesta ordem):
    resultados, elenco, bastidores. Se houver as duas, fale das duas.
 8. RIO CLARO & REGIÃO (quando houver notícia): o que aconteceu de relevante na
    cidade de Rio Claro (SP), em tom de vizinhança, sem fofoca.
-9. CIÊNCIA & SOCIEDADE: de 1 a 3 notícias de ciência, tecnologia,
+9. CIÊNCIA & SOCIEDADE: de 3 a 5 notícias de ciência, tecnologia,
    infraestrutura, saúde, educação, segurança, filosofia ou comportamento
    humano. Prefira descobertas e fatos com impacto real, não curiosidade vazia.
 10. FÉ & TEOLOGIA (quando houver notícia): teologia pentecostal, livros e
@@ -849,7 +857,7 @@ ESTRUTURA DO EPISÓDIO (10 a 12 minutos, nesta ordem):
    achados arqueológicos pelo que a evidência mostra e atribua interpretações
    a quem as defende ("segundo o pesquisador", "na leitura do autor"). Não
    invente citação bíblica nem de teólogo que não esteja no material.
-11. RODADA RÁPIDA: de 2 a 4 notícias curtas, poucas falas cada, com ritmo.
+11. RODADA RÁPIDA: de 6 a 8 notícias curtas, poucas falas cada, com ritmo.
 12. TERMO DO DIA: um termo ou conceito que apareceu no episódio (de economia,
    política, ciência, teologia...), explicado por {M} com uma analogia do dia
    a dia. Nunca repita um termo já explicado nos
@@ -924,19 +932,123 @@ Escreva um roteiro de podcast de 5 a 7 minutos:
 - Encerre com uma despedida curta."""
 
 
-def montar_prompt(items: list[dict], episodios: list[dict], dupla: tuple[dict, dict]) -> str:
+# O episódio é escrito em partes: cada uma é uma chamada ao Gemini com os
+# blocos dela, as notícias dessas áreas e o roteiro das partes anteriores.
+PARTES = [
+    {"titulo": "ABERTURA, MANCHETE DO DIA e POLÍTICA", "tags": ("politica",),
+     "blocos": ("Manchete", "Política"), "peso": 0.25, "primeira": True},
+    {"titulo": "GEOPOLÍTICA e ECONOMIA & MERCADOS", "tags": ("geopolitica", "economia"),
+     "blocos": ("Geopolítica", "Economia & Mercados"), "peso": 0.25},
+    {"titulo": "TRABALHO & RENDA, ESPORTES e RIO CLARO & REGIÃO",
+     "tags": ("trabalho", "esportes", "local"),
+     "blocos": ("Trabalho & Renda", "Esportes", "Rio Claro"), "peso": 0.18},
+    {"titulo": "CIÊNCIA & SOCIEDADE e FÉ & TEOLOGIA", "tags": ("ciencia", "fe"),
+     "blocos": ("Ciência & Sociedade", "Fé & Teologia"), "peso": 0.20},
+    {"titulo": "RODADA RÁPIDA, TERMO DO DIA e ENCERRAMENTO", "tags": (),
+     "blocos": ("Rodada rápida",), "peso": 0.12, "ultima": True},
+]
+_NOME_AREA = {
+    "politica": "Política", "geopolitica": "Geopolítica", "economia": "Economia & Mercados",
+    "trabalho": "Trabalho & Renda", "esportes": "Esportes", "local": "Rio Claro",
+    "ciencia": "Ciência & Sociedade", "fe": "Fé & Teologia",
+}
+
+
+def _corpus(items: list[dict], parte: dict | None, cobertas: set[int], enxuto: bool) -> str:
+    """Notícias da parte, com o número ORIGINAL de cada uma (as notas do
+    episódio apontam pra esse número). Sem `parte` (modo solo): todas."""
+    if parte is None:
+        pares = list(enumerate(items, 1))
+    elif parte.get("ultima"):
+        # Rodada rápida: o que sobrou, no máximo 6 por área.
+        por_area: dict[str, list[tuple[int, dict]]] = {}
+        for n, it in enumerate(items, 1):
+            if n not in cobertas:
+                por_area.setdefault(it.get("tag") or "", []).append((n, it))
+        pares = [par for lst in por_area.values() for par in lst[:6]]
+    else:
+        pares = [
+            (n, it)
+            for n, it in enumerate(items, 1)
+            if n not in cobertas
+            and (it.get("tag") in parte["tags"] or (parte.get("primeira") and it.get("manchete")))
+        ]
+    if enxuto:
+        pares = pares[:30]
     blocos = []
-    for n, i in enumerate(items, 1):
-        bloco = f"[{n}] FONTE: {i['source']}\nTÍTULO: {i['title']}\nRESUMO: {i['summary']}"
-        if i.get("full_text"):
+    for n, i in pares:
+        marca = "[MANCHETE SUGERIDA] " if parte and parte.get("primeira") and i.get("manchete") else ""
+        bloco = f"{marca}[{n}] FONTE: {i['source']}\nTÍTULO: {i['title']}\nRESUMO: {i['summary']}"
+        if i.get("tag") in _NOME_AREA:
+            bloco += f"\nÁREA: {_NOME_AREA[i['tag']]}"
+        if i.get("full_text") and not enxuto and not (parte and parte.get("ultima")):
             bloco += f"\nMATÉRIA COMPLETA: {i['full_text']}"
         blocos.append(bloco)
-    corpus = "\n\n".join(blocos)
+    return "\n\n".join(blocos) if blocos else "(nenhuma notícia nova desta área hoje)"
+
+
+def _diretriz_parte(parte: dict, ctx: dict) -> str:
+    i, total = ctx["i"], len(PARTES)
+    alvo = ctx["alvo"]
+    inicio = (
+        "- Comece pela ABERTURA (vinheta + apresentações) como descrito acima."
+        if parte.get("primeira")
+        else "- Esta parte CONTINUA uma conversa que já está no ar: nada de vinheta, nada "
+        "de se apresentar de novo, nada de 'bem-vindos' nem 'voltamos'. A primeira fala "
+        "reage ao que foi dito por último ou vira de assunto de forma natural."
+    )
+    fim = (
+        "- Esta é a ÚLTIMA parte: termine com o ENCERRAMENTO descrito acima."
+        if parte.get("ultima")
+        else "- Esta NÃO é a última parte: não encerre, não se despeça, não resuma o "
+        "episódio nem anuncie o fim."
+    )
+    texto = f"""
+ESTE EPISÓDIO É ESCRITO EM {total} PARTES (ele tem uns {EPISODE_MINUTES} minutos de
+áudio). Você está escrevendo a PARTE {i} de {total}.
+- Escreva SOMENTE: {parte["titulo"]}. Os outros blocos da ESTRUTURA acima ficam
+  com as outras partes: não os comente.
+{inicio}
+{fim}
+- TAMANHO: no mínimo {alvo} palavras de fala nesta parte (uns {max(1, round(alvo / WORDS_PER_MIN))}
+  minutos de áudio), podendo ir até {int(alvo * 1.3)}. Aprofunde: cada notícia merece
+  contexto, causas, o que cada lado diz, números, e o que muda pra quem ouve,
+  em várias trocas de fala (com reações curtas no meio). É melhor falar de
+  menos notícias com profundidade do que listar muitas. Se faltar notícia
+  inédita, aprofunde o contexto das que existem em vez de inventar.
+- Use --- só na troca de bloco, como descrito no FORMATO."""
+    if ctx.get("ate_agora"):
+        texto += f"""
+
+PARTES ANTERIORES DESTE MESMO EPISÓDIO (já foram ao ar; continue de onde parou,
+sem repetir assunto, piada, analogia nem expressão):
+{ctx["ate_agora"][-9000:]}"""
+    if ctx.get("rascunho"):
+        texto += f"""
+
+RASCUNHO ANTERIOR DESTA PARTE (ficou curto: {ctx["palavras"]} palavras, e o mínimo é {alvo}):
+reescreva a parte INTEIRA, mais aprofundada: mais contexto, mais reações, mais
+trocas por notícia, sem inventar fatos. Entregue só a versão nova.
+{ctx["rascunho"]}"""
+    return texto
+
+
+def montar_prompt(
+    items: list[dict],
+    episodios: list[dict],
+    dupla: tuple[dict, dict],
+    parte: dict | None = None,
+    ctx: dict | None = None,
+    cobertas: set[int] | None = None,
+    enxuto: bool = False,
+) -> str:
+    corpus = _corpus(items, parte, cobertas or set(), enxuto)
     estilo = (
         _estilo_duo(dupla, expressoes_gastas(episodios))
         if PODCAST_STYLE == "duo"
         else _ESTILO_SOLO.replace("{VINHETA}", VINHETA)
     )
+    diretriz = _diretriz_parte(parte, ctx) if parte is not None and ctx is not None else ""
 
     anteriores = ""
     if episodios:
@@ -959,8 +1071,8 @@ NÃO SEJA REPETITIVO (muito importante):
   nem o ritmo deles: as regras de formato, de SOAR HUMANO e o roteiro do TERMO
   DO DIA acima valem mais que qualquer coisa que esses episódios tenham feito
   (por exemplo, não imite falas longas cheias de exclamação).
-- Se sobrarem poucas notícias inéditas, faça um episódio mais curto em vez de
-  requentar assunto.
+- Se sobrarem poucas notícias inéditas, aprofunde o contexto das que existem
+  em vez de requentar assunto.
 
 GANCHOS COM EPISÓDIOS ANTERIORES (faz o podcast parecer uma série):
 - Quando uma notícia de hoje for continuação, consequência ou reação a algo
@@ -974,7 +1086,27 @@ GANCHOS COM EPISÓDIOS ANTERIORES (faz o podcast parecer uma série):
 
 {roteiros}"""
 
+    if parte is None:
+        blocos_notas = (
+            "Manchete, Política, Geopolítica, Economia & Mercados, Trabalho & Renda, "
+            "Esportes, Rio Claro, Ciência & Sociedade, Fé & Teologia, Rodada rápida"
+        )
+        termo = "\n- Por último, uma linha: TERMO | Termo do dia | termo — definição em uma frase"
+        escopo = "uma linha por notícia comentada, na ordem do episódio"
+    else:
+        blocos_notas = ", ".join(parte["blocos"])
+        termo = (
+            "\n- Por último, uma linha: TERMO | Termo do dia | termo — definição em uma frase"
+            if parte.get("ultima")
+            else "\n- NÃO escreva a linha TERMO nesta parte (ela é da última parte)."
+        )
+        escopo = (
+            "uma linha por notícia que você REALMENTE comentou nas falas desta parte "
+            "(nunca liste notícia que não foi falada), na ordem em que apareceram"
+        )
+
     prompt = f"""{estilo}
+{diretriz}
 
 ESCRITA PRA VOZ (o roteiro vai ser lido por uma voz sintética):
 - Números em nomes de produtos, eventos e versões sempre com algarismos
@@ -986,34 +1118,79 @@ ESCRITA PRA VOZ (o roteiro vai ser lido por uma voz sintética):
 - Escreva nomes de empresas e produtos com a grafia normal (a pronúncia é
   ajustada depois).
 
-NOTAS DO EPISÓDIO (obrigatório): depois da última fala, escreva uma linha
-exatamente assim: ===NOTAS===
-E abaixo dela, uma linha por notícia comentada, na ordem do episódio:
+NOTAS (obrigatório): depois da última fala, escreva uma linha exatamente
+assim: ===NOTAS===
+E abaixo dela, {escopo}:
 NÚMERO | BLOCO | título curto em português
 - NÚMERO é o número entre colchetes da notícia na lista abaixo (se juntou
   várias, use a principal).
-- BLOCO é um destes: Manchete, Política, Geopolítica, Economia & Mercados, Trabalho & Renda, Esportes, Rio Claro, Ciência & Sociedade, Fé & Teologia, Rodada rápida.
-- Por último, uma linha: TERMO | Termo do dia | termo — definição em uma frase{anteriores}
+- BLOCO é um destes: {blocos_notas}.{termo}{anteriores}
 
 Abaixo estão as notícias das últimas {HOURS_WINDOW} horas coletadas de vários sites
 (as que já foram usadas em episódios anteriores já foram removidas).
 
-NOTÍCIAS DE HOJE:
+NOTÍCIAS {"DESTA PARTE" if parte is not None else "DE HOJE"}:
 {corpus}"""
 
     return prompt
 
 
+def _contar_palavras(script: str) -> int:
+    return sum(len(t.split()) for spk, t in parse_dialogue(script) if spk != "PAUSA")
+
+
 def roteirizar(items: list[dict], episodios: list[dict], dupla: tuple[dict, dict]) -> str:
-    """Prompt completo nas primeiras rodadas; na última, uma versão enxuta
-    (metade das notícias, sem matéria completa nem episódios anteriores
-    longos). Em 13/10 todos os modelos deram 500 por minutos seguidos — se
-    for o tamanho do pedido pesando no servidor, a versão enxuta passa."""
-    enxutos = [{k: v for k, v in it.items() if k != "full_text"} for it in items[:60]]
+    """No estilo duo, escreve o episódio em PARTES (veja PARTES): uma chamada
+    ao Gemini por parte, cada uma recebendo o roteiro das anteriores. Numa
+    chamada só o roteiro saía com ~6 min. Cada chamada tem prompt completo nas
+    primeiras rodadas e uma versão enxuta na última (em 13/10 todos os modelos
+    deram 500 por minutos seguidos; o pedido menor passa). Parte curta demais
+    ganha UMA reescrita mais aprofundada."""
     ultimo = [{**ep, "roteiro": ep.get("roteiro", "")[:3000]} for ep in episodios[-1:]]
-    return gerar_com_gemini(
-        [montar_prompt(items, episodios, dupla), montar_prompt(enxutos, ultimo, dupla)]
-    )
+    if PODCAST_STYLE != "duo":
+        enxutos = [{k: v for k, v in it.items() if k != "full_text"} for it in items[:60]]
+        return gerar_com_gemini(
+            [montar_prompt(items, episodios, dupla), montar_prompt(enxutos, ultimo, dupla)]
+        )
+
+    total = EPISODE_MINUTES * WORDS_PER_MIN
+    roteiros: list[str] = []
+    notas: list[str] = []
+    cobertas: set[int] = set()
+    for i, parte in enumerate(PARTES, 1):
+        alvo = int(total * parte["peso"])
+        ctx = {"i": i, "alvo": alvo, "ate_agora": "\n---\n".join(roteiros)}
+        print(f"[PARTE {i}/{len(PARTES)}] {parte['titulo']} (alvo {alvo} palavras)")
+        resposta = gerar_com_gemini(
+            [
+                montar_prompt(items, episodios, dupla, parte, ctx, cobertas),
+                montar_prompt(items, ultimo, dupla, parte, ctx, cobertas, enxuto=True),
+            ]
+        )
+        fala, nota = separar_notas(resposta)
+        palavras = _contar_palavras(fala)
+        print(f"[PARTE {i}/{len(PARTES)}] {palavras} palavras")
+        if palavras < 0.7 * alvo:
+            print(f"[AVISO] parte {i} curta ({palavras} de {alvo}); pedindo versão mais longa", file=sys.stderr)
+            try:
+                ctx2 = {**ctx, "rascunho": fala, "palavras": palavras}
+                resposta2 = gerar_com_gemini(
+                    [montar_prompt(items, episodios, dupla, parte, ctx2, cobertas)]
+                )
+                fala2, nota2 = separar_notas(resposta2)
+                p2 = _contar_palavras(fala2)
+                print(f"[PARTE {i}/{len(PARTES)}] reescrita: {p2} palavras")
+                if p2 > palavras:
+                    fala, nota = fala2, nota2
+            except Exception as e:
+                print(f"[AVISO] reescrita da parte {i} falhou ({_resumo_erro(e)}); mantenho a primeira", file=sys.stderr)
+        roteiros.append(fala.strip())
+        notas.append(nota.strip())
+        for linha in nota.splitlines():
+            m = re.match(r"\W*(\d+)\s*\|", linha)
+            if m:
+                cobertas.add(int(m.group(1)))
+    return "\n---\n".join(roteiros) + "\n===NOTAS===\n" + "\n".join(n for n in notas if n)
 
 
 def gerar_com_gemini(prompts: list[str]) -> str:
@@ -1364,8 +1541,8 @@ def normalizar_roteiro(script: str, dupla: tuple[dict, dict]) -> str:
             linha = f"{spk}: {fala}"
         linhas.append(linha)
     separadores = sum(1 for l in linhas if re.fullmatch(r"\s*-{3,}\s*", l))
-    if separadores > 14:
-        print(f"[AVISO] {separadores} separadores --- no roteiro (máx. ~9); removidos", file=sys.stderr)
+    if separadores > 40:
+        print(f"[AVISO] {separadores} separadores --- no roteiro (máx. ~20); removidos", file=sys.stderr)
         linhas = [l for l in linhas if not re.fullmatch(r"\s*-{3,}\s*", l)]
     return "\n".join(linhas)
 
@@ -1565,7 +1742,7 @@ def send_telegram_audio(mp3_path: str, caption: str) -> None:
                 "title": caption.split("\n")[0][:60],
             },
             files={"audio": (os.path.basename(mp3_path), f, "audio/mpeg")},
-            timeout=120,
+            timeout=300,
         )
     _telegram_ok(resp)
 
@@ -1661,6 +1838,8 @@ def montar_notas(notas: str, items: list[dict], today: str) -> tuple[str, str]:
         por_bloco[nome_bloco].append(f"• {linha}")
         if nome_bloco == "Manchete" and not manchete:
             manchete = titulo
+    for nome, linhas in por_bloco.items():
+        del linhas[12 if nome == "Rodada rápida" else 8:]  # só o que foi falado de fato
     if not any(por_bloco.values()):
         return "", ""
     faltando = [nome for nome in BLOCOS_OBRIGATORIOS if not por_bloco[nome]]
