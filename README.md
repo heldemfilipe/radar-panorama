@@ -121,6 +121,7 @@ radar-panorama/
 ├── feeds.txt                    ← fontes, cada uma com a tag do bloco
 ├── apresentadores.json          ← elenco, vozes e rodízio
 ├── pronuncia.txt                ← como a voz fala siglas e nomes difíceis
+├── capa.jpg                     ← capa do áudio (JPEG, até 320x320 e 200 KB)
 ├── LICENSE
 ├── historico.json               ← criado/atualizado pelo bot (não edite)
 └── requirements.txt
@@ -143,12 +144,14 @@ radar-panorama/
    | `GEMINI_API_KEY` | chave do https://aistudio.google.com/apikey |
    | `TELEGRAM_BOT_TOKEN` | token do bot novo |
    | `TELEGRAM_CHAT_ID` | seu chat_id, ou, pra publicar num canal, o `@usuario` do canal (o bot precisa ser administrador dele, com permissão de publicar) |
+   | `TELEGRAM_ADMIN_CHAT_ID` | seu chat_id (id de usuário), depois de mandar `/start` pro bot. Recebe os avisos de falha, que nunca vão pro canal. Sem ele, os avisos ficam só no log do Actions |
 
 3. **Teste sem esperar o horário:** aba **Actions** → "Radar Panorama Diário" →
    **Run workflow**. Em ~1 min o áudio chega no Telegram.
 
 4. Pronto. Todo dia ~6h30 (BRT) ele roda sozinho; se falhar, tenta de novo às
-   9h15 e 12h15.
+   9h15 e 12h15. Se só a voz falhar, o canal não recebe nada até a nova
+   tentativa, que refaz o áudio sem gerar outro roteiro e manda as notas junto.
 
 ## Editar fontes
 
@@ -166,8 +169,11 @@ Dica: `gnews:` é o jeito mais fácil de cobrir um tema novo, ex.:
   (BRT) pra entrega cair por volta das 6h30.
 - **Dê `git pull` antes de mexer no repo.** O bot commita o `historico.json` todo
   dia; sem o pull, seu push é recusado.
-- **Sem notícias repetidas.** Notícias e assuntos dos últimos 3 dias entram no
-  prompt como "já falado"; pra zerar a memória, apague o `historico.json`.
+- **Sem notícias repetidas.** Só as notícias faladas contam como usadas: as que
+  o Gemini recebeu e não comentou continuam disponíveis. Elas ficam barradas por
+  8 dias (`HISTORY_NEWS_DAYS`, cobre a janela de 168h dos feeds de fé), e os
+  roteiros dos últimos 3 dias (`HISTORY_DAYS`) entram no prompt como "já falado".
+  Pra zerar a memória, apague o `historico.json`.
 - **Inatividade desativa o cron.** O commit diário do histórico mantém o repo vivo.
 
 ## Licença
