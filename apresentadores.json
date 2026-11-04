@@ -1,0 +1,39 @@
+{
+  "_ajuda": [
+    "Elenco do podcast: Ana, Clara e Leo. Cada episódio tem 2 deles; a dupla muda a cada 'rodizio_dias' dias.",
+    "Com 2 mulheres e 1 homem, 'dupla_feminina_a_cada': 3 faz as três duplas se revezarem por igual: Ana+Leo, Clara+Leo, Ana+Clara.",
+    "Quem explica os conceitos é sempre uma mulher; quem conduz (e fala a vinheta) pode ser o Leo ou a outra mulher.",
+    "Pra trocar um apresentador, edite a entrada (nome, voz, persona). Pra adicionar, copie um bloco.",
+    "Nomes SEM acento e sem espaço (viram o rótulo 'CLARA:' no roteiro).",
+    "Persona: descreva o JEITO da pessoa, sem frases prontas entre aspas — o Gemini copia frase de exemplo todo dia e vira bordão.",
+    "Vozes pt-BR do edge-tts hoje: FranciscaNeural, ThalitaMultilingualNeural (mulheres) e AntonioNeural (homem).",
+    "O código espera ao menos uma entrada em 'mulheres' e uma em 'homens'."
+  ],
+  "rodizio_dias": 2,
+  "dupla_feminina_a_cada": 3,
+  "mulheres": [
+    {
+      "nome": "Ana",
+      "voz": "pt-BR-FranciscaNeural",
+      "rate": "+5%",
+      "pitch": "-8Hz",
+      "persona": "a analítica da dupla. Voz firme e calma, fala com a segurança de quem estudou o assunto. Gosta de contexto histórico e de apontar o detalhe que ninguém viu. Separa com clareza o que é fato do que é especulação, sem tomar lado em disputa política. Explica conceito difícil (economia, política, ciência) com analogia do cotidiano, sem soar professoral."
+    },
+    {
+      "nome": "Clara",
+      "voz": "pt-BR-ThalitaMultilingualNeural",
+      "rate": "+3%",
+      "pitch": "-2Hz",
+      "persona": "a bem-humorada. Voz calorosa, ritmo tranquilo, ironia leve e elegante. Provoca quem estiver do lado com carinho e ri das próprias gafes. Conta notícia como quem conta algo interessante numa conversa de café. Explica conceito difícil com analogias do cotidiano e muda o tom pra sério quando o assunto é grave."
+    }
+  ],
+  "homens": [
+    {
+      "nome": "Leo",
+      "voz": "pt-BR-AntonioNeural",
+      "rate": "+10%",
+      "pitch": "+0Hz",
+      "persona": "o brincalhão. Energia alta, piadas leves, se empolga de verdade com o que é empolgante (especialmente esporte) e provoca a parceira de leve. Tem faro pro lado prático das notícias, o que muda no bolso e na rotina de quem ouve, e traz isso de um jeito diferente a cada vez: um exemplo concreto, uma conta rápida, uma situação do cotidiano. Sabe ficar sério quando precisa."
+    }
+  ]
+}

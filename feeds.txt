@@ -1,0 +1,95 @@
+# Um feed por linha. Linhas com # são ignoradas.
+#
+# Formatos aceitos:
+#   https://site.com/feed/                 -> RSS normal
+#   https://site.com/feed/ | Nome          -> RSS com nome fixo no episódio
+#   gnews: "Rio Claro" SP | Nome           -> busca no Google Notícias
+#   sitemap: <url com {data}> <trecho> | Nome -> sitemap diário
+#   https://site.com/feed/ | Nome | 72h    -> janela maior que 24h, pra fontes
+#                                             que postam pouco (o histórico
+#                                             impede repetir notícia)
+#   https://site.com/feed/ | Nome | 24h | politica
+#                                          -> 4º campo OBRIGATÓRIO aqui: diz a
+#                                             qual bloco do episódio a fonte
+#                                             pertence (veja as tags abaixo)
+#
+# TAGS (cada uma é um bloco do episódio):
+#   politica    -> Política (Brasil, MBL, Partido Missão...)
+#   geopolitica -> Geopolítica
+#   economia    -> Economia & Mercados (Brasil e mundo, bolsas, ações, ETFs, câmbio)
+#   trabalho    -> Trabalho & Renda (empregos novos, ganho por hora, onde está o dinheiro)
+#   esportes    -> Esportes (Santos FC, Manchester City)
+#   local       -> Rio Claro & Região
+#   ciencia     -> Ciência & Sociedade (tecnologia, infraestrutura, ciência, saúde,
+#                  educação, segurança, filosofia, comportamento)
+#   fe          -> Fé & Teologia (teologia pentecostal, comentários bíblicos,
+#                  arqueologia bíblica)
+#
+# Pra adicionar um site: procure "nome-do-site RSS" no Google e cole a URL
+# aqui — mas TESTE antes (alguns sites "chutados" devolvem 404 ou feed vazio).
+# Se o site bloquear o GitHub (403/429), o script busca as notícias dele
+# pelo Google Notícias sozinho — não precisa trocar a URL.
+
+# ---- Política ----
+https://agenciabrasil.ebc.com.br/rss/politica/feed.xml | Agência Brasil | 24h | politica
+https://www.camara.leg.br/noticias/rss/ultimas-noticias | Agência Câmara | 24h | politica
+https://www12.senado.leg.br/noticias/rss | Agência Senado | 24h | politica
+https://g1.globo.com/rss/g1/politica/ | G1 Política | 24h | politica
+https://www.poder360.com.br/feed/ | Poder360 | 24h | politica
+https://feeds.folha.uol.com.br/poder/rss091.xml | Folha Poder | 24h | politica
+https://www.jota.info/feed | JOTA | 24h | politica
+gnews: MBL "Movimento Brasil Livre" | Google Notícias (MBL) | 48h | politica
+gnews: "Partido Missão" | Google Notícias (Partido Missão) | 72h | politica
+
+# ---- Geopolítica ----
+https://g1.globo.com/rss/g1/mundo/ | G1 Mundo | 24h | geopolitica
+https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml | Agência Brasil Internacional | 24h | geopolitica
+https://feeds.bbci.co.uk/portuguese/internacional/rss.xml | BBC News Brasil | 24h | geopolitica
+https://rss.dw.com/xml/rss-br-all | DW Brasil | 24h | geopolitica
+https://www.aljazeera.com/xml/rss/all.xml | Al Jazeera | 24h | geopolitica
+
+# ---- Economia: Brasil e mundo, índices, ações, ETFs ----
+https://g1.globo.com/rss/g1/economia/ | G1 Economia | 24h | economia
+https://agenciabrasil.ebc.com.br/rss/economia/feed.xml | Agência Brasil Economia | 24h | economia
+https://www.infomoney.com.br/feed/ | InfoMoney | 24h | economia
+https://exame.com/feed/ | Exame | 24h | economia
+https://www.moneytimes.com.br/feed/ | Money Times | 24h | economia
+https://www.cnbc.com/id/10000664/device/rss/rss.html | CNBC Finance | 24h | economia
+https://www.cnbc.com/id/100003114/device/rss/rss.html | CNBC Top News | 24h | economia
+gnews: dólar Ibovespa fechamento bolsa | Google Notícias (mercado) | 24h | economia
+gnews: ETF ações empresas lucro crescimento | Google Notícias (ações e ETFs) | 48h | economia
+
+# ---- Trabalho & Renda: empregos novos e onde está o dinheiro ----
+gnews: "novas profissões" OR "profissões do futuro" OR "mercado de trabalho" | Google Notícias (empregos) | 72h | trabalho
+gnews: renda trabalhador "salário médio" OR "rendimento médio" IBGE | Google Notícias (renda) | 72h | trabalho
+gnews: "renda extra" OR "ganhar dinheiro" OR "setores que mais crescem" | Google Notícias (oportunidades) | 72h | trabalho
+
+# ---- Esportes: Santos FC e Manchester City ----
+gnews: "Santos FC" | Google Notícias (Santos) | 24h | esportes
+gnews: "Manchester City" | Google Notícias (Man City) | 24h | esportes
+https://feeds.bbci.co.uk/sport/football/teams/manchester-city/rss.xml | BBC Sport (Man City) | 24h | esportes
+
+# ---- Rio Claro & Região ----
+gnews: "Rio Claro" SP | Google Notícias (Rio Claro) | 48h | local
+
+# ---- Ciência & Sociedade: tecnologia, infraestrutura, ciência, saúde, educação,
+#      segurança, filosofia e comportamento ----
+https://jornal.usp.br/feed/ | Jornal da USP | 48h | ciencia
+https://revistapesquisa.fapesp.br/feed/ | Pesquisa FAPESP | 72h | ciencia
+https://www.sciencedaily.com/rss/all.xml | ScienceDaily | 24h | ciencia
+https://tecnoblog.net/feed/ | Tecnoblog | 24h | ciencia
+https://canaltech.com.br/rss/ | Canaltech | 24h | ciencia
+https://agenciabrasil.ebc.com.br/rss/saude/feed.xml | Agência Brasil Saúde | 48h | ciencia
+https://agenciabrasil.ebc.com.br/rss/educacao/feed.xml | Agência Brasil Educação | 48h | ciencia
+https://g1.globo.com/rss/g1/educacao/ | G1 Educação | 48h | ciencia
+gnews: infraestrutura obras investimento logística | Google Notícias (infraestrutura) | 72h | ciencia
+gnews: "segurança pública" OR "cibersegurança" | Google Notícias (segurança) | 48h | ciencia
+gnews: filosofia OR "comportamento humano" psicologia estudo | Google Notícias (filosofia e comportamento) | 72h | ciencia
+gnews: saúde estudo pesquisa descoberta | Google Notícias (saúde) | 48h | ciencia
+
+# ---- Fé & Teologia (poucas notícias por semana: janelas longas) ----
+https://www.biblicalarchaeology.org/feed/ | Biblical Archaeology Society | 168h | fe
+https://www.gospelprime.com.br/feed/ | Gospel Prime | 168h | fe
+gnews: "arqueologia bíblica" OR "arqueologia da Bíblia" | Google Notícias (arqueologia bíblica) | 168h | fe
+gnews: "teologia pentecostal" OR pentecostais teologia | Google Notícias (teologia pentecostal) | 168h | fe
+gnews: "comentário bíblico" OR "comentário da Bíblia" livro | Google Notícias (comentários bíblicos) | 168h | fe

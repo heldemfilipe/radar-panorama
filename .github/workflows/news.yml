@@ -1,0 +1,84 @@
+name: Radar Panorama Diário
+
+on:
+  schedule:
+    # 09:15 UTC = 06:15 BRT. O cron do Actions NÃO é pontual (atrasa 5 a
+    # 40 min na fila), então disparamos 15 min antes pra entrega real
+    # cair em torno das 06:30.
+    - cron: "15 9 * * *"
+    # Repescagens (09:15 e 12:15 BRT): só fazem algo se o episódio das 06:15
+    # falhou — Gemini fora do ar (13/10) ou voz da Microsoft recusando (12/10).
+    # Se o roteiro saiu e só a voz falhou, refazem apenas o áudio.
+    - cron: "15 12 * * *"
+    - cron: "15 15 * * *"
+  workflow_dispatch: {}   # permite rodar manualmente pela aba Actions (pra testar)
+
+permissions:
+  contents: write   # pra commitar o historico.json (memória anti-repetição)
+
+# Duas execuções ao mesmo tempo (cron + botão manual) brigariam pelo
+# historico.json; a segunda espera a primeira terminar.
+concurrency:
+  group: radar-panorama
+  cancel-in-progress: false
+
+jobs:
+  resumo:
+    # Fixo no 24.04: o ubuntu-latest vira Ubuntu 26 em 19/10/2026 e o
+    # setup-python pode demorar a ter Python 3.12 pronto pra ele.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20   # folga pros retries do Gemini (rodadas de até 3 min de espera)
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Gerar e enviar resumo
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PYTHONUNBUFFERED: "1"   # log na ordem certa (stdout e stderr misturados)
+          REPESCAGEM: ${{ github.event.schedule == '15 12 * * *' || github.event.schedule == '15 15 * * *' }}
+          # Horário (BRT) da próxima execução agendada, citado no aviso de falha.
+          PROXIMA_TENTATIVA: ${{ github.event.schedule == '15 9 * * *' && '09:15' || github.event.schedule == '15 12 * * *' && '12:15' || '' }}
+          # Quantas notícias vão pro Gemini (padrão do código: 100). Subir
+          # demais aumenta o risco de timeout na geração do roteiro.
+          MAX_ITEMS_TO_SUMMARIZE: "150"
+          # PODCAST_STYLE: solo   # descomente pra voltar ao narrador único
+        run: python main.py
+
+      # Guarda as notícias e o roteiro do episódio no repo, pra amanhã o
+      # script saber o que já foi falado e não repetir. De quebra, esse
+      # commit diário mantém o cron vivo (o GitHub desativa workflows
+      # agendados após 60 dias sem commits) — por isso não há mais keepalive.
+      # always(): se a voz falhar, o script sai com erro mas grava o roteiro
+      # com "audio_ok: false" — esse registro precisa ser commitado pra a
+      # repescagem refazer só o áudio.
+      - name: Salvar histórico (evita notícias repetidas)
+        if: always()
+        run: |
+          if [ ! -f historico.json ]; then
+            echo "Sem histórico pra salvar (nenhum episódio gerado)."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add historico.json
+          if git diff --cached --quiet; then
+            echo "Histórico sem mudanças."
+            exit 0
+          fi
+          git commit -m "histórico: episódio de $(TZ=America/Sao_Paulo date +%d/%m/%Y)"
+          for i in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep 5
+          done
+          echo "Não consegui dar push no histórico" >&2
+          exit 1

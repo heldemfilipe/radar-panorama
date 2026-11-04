@@ -1,0 +1,56 @@
+# Como a voz deve falar certos termos. Formato:   Termo = como falar
+#
+# - Vale só pro ÁUDIO; o texto das notas no Telegram continua com a grafia certa.
+# - Termo todo em MAIÚSCULAS (sigla) só troca quando aparece exatamente assim
+#   ("ETF" troca, a palavra "etf" solta não). Os outros ignoram maiúsculas/minúsculas.
+# - Ouviu a voz errando alguma palavra? Adicione uma linha aqui e dê push.
+# - Números romanos em nomes ("Copa XX" -> "Copa 20") já são convertidos
+#   automaticamente; não precisa listar.
+#
+# As grafias abaixo são aproximações do jeito brasileiro de falar. Se alguma
+# ficar pior que o original, é só apagar a linha.
+
+# ---- Siglas ----
+AI = ei ai
+CEO = ci-i-ôu
+ETF = i-tê-éfe
+ETFs = i-tê-éfes
+IPCA = i-pê-cê-á
+PIB = píbi
+CPI = cê-pê-i
+Fed = féd
+BRICS = bríquis
+OTAN = ôtan
+NATO = nêitou
+MBL = ême-bê-éle
+STF = ésse-tê-éfe
+TSE = tê-ésse-é
+PEC = pêquis
+USP = ú-ésse-pê
+FC = éfe-cê
+
+# ---- Mercado ----
+Nasdaq = nézdaque
+Dow Jones = dau djóns
+S&P 500 = ésse-end-pê quinhentos
+Ibovespa = ibovéspa
+Selic = sélic
+Bitcoin = bítcoin
+Wall Street = uól strít
+
+# ---- Esportes ----
+Manchester City = mântchester síti
+Manchester = mântchester
+Guardiola = guardiôla
+Haaland = rólan
+Vila Belmiro = vila belmíro
+
+# ---- Empresas e produtos ----
+iPhone = aifone
+OpenAI = ôupen ei ai
+ChatGPT = tchat dji-pi-ti
+GPT = dji-pi-ti
+Nvidia = en-vídia
+Gemini = djêmini
+Claude = clóude
+Anthropic = ântropic
