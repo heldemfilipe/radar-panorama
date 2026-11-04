@@ -71,6 +71,8 @@ MAX_FULL_ARTICLES = int(os.environ.get("MAX_FULL_ARTICLES", "14"))
 # (falas aparadas, rate +5%/+10%): 1344 palavras deram 6min18.
 EPISODE_MINUTES = int(os.environ.get("EPISODE_MINUTES", "30"))
 WORDS_PER_MIN = int(os.environ.get("WORDS_PER_MIN", "200"))
+# Pausa entre as chamadas das partes (o Gemini devolvia 429 em sequência).
+PAUSA_ENTRE_PARTES = int(os.environ.get("PAUSA_ENTRE_PARTES", "20"))
 PRONUNCIA_FILE = os.environ.get("PRONUNCIA_FILE", "pronuncia.txt")
 # Preenchidos pelo workflow. REPESCAGEM: execução extra do fim da manhã, que
 # só gera episódio se o das 06:15 não saiu. PROXIMA_TENTATIVA: horário (BRT)
@@ -1105,6 +1107,17 @@ GANCHOS COM EPISÓDIOS ANTERIORES (faz o podcast parecer uma série):
             "(nunca liste notícia que não foi falada), na ordem em que apareceram"
         )
 
+    lembrete = ""
+    if parte is not None:
+        r1, r2 = dupla[0]["rotulo"], dupla[1]["rotulo"]
+        lembrete = f"""
+
+LEMBRETE FINAL DE FORMATO (obrigatório): responda SÓ com falas, uma por linha,
+cada uma começando com "{r1}:" ou "{r2}:" (o rótulo, dois-pontos e a fala NA
+MESMA LINHA), com uma linha --- na troca de bloco; depois a linha ===NOTAS=== e
+as notas. Sem títulos, sem markdown, sem narração e sem nenhum texto fora desse
+formato."""
+
     prompt = f"""{estilo}
 {diretriz}
 
@@ -1130,7 +1143,7 @@ Abaixo estão as notícias das últimas {HOURS_WINDOW} horas coletadas de vário
 (as que já foram usadas em episódios anteriores já foram removidas).
 
 NOTÍCIAS {"DESTA PARTE" if parte is not None else "DE HOJE"}:
-{corpus}"""
+{corpus}{lembrete}"""
 
     return prompt
 
@@ -1157,10 +1170,8 @@ def roteirizar(items: list[dict], episodios: list[dict], dupla: tuple[dict, dict
     roteiros: list[str] = []
     notas: list[str] = []
     cobertas: set[int] = set()
-    for i, parte in enumerate(PARTES, 1):
-        alvo = int(total * parte["peso"])
-        ctx = {"i": i, "alvo": alvo, "ate_agora": "\n---\n".join(roteiros)}
-        print(f"[PARTE {i}/{len(PARTES)}] {parte['titulo']} (alvo {alvo} palavras)")
+
+    def gerar_parte(parte: dict, ctx: dict) -> tuple[str, str, int, str]:
         resposta = gerar_com_gemini(
             [
                 montar_prompt(items, episodios, dupla, parte, ctx, cobertas),
@@ -1168,8 +1179,32 @@ def roteirizar(items: list[dict], episodios: list[dict], dupla: tuple[dict, dict
             ]
         )
         fala, nota = separar_notas(resposta)
-        palavras = _contar_palavras(fala)
+        return fala, nota, _contar_palavras(fala), resposta
+
+    for i, parte in enumerate(PARTES, 1):
+        if i > 1:
+            time.sleep(PAUSA_ENTRE_PARTES)  # alivia o 429 (limite por minuto) do Gemini
+        alvo = int(total * parte["peso"])
+        ctx = {"i": i, "alvo": alvo, "ate_agora": "\n---\n".join(roteiros)}
+        print(f"[PARTE {i}/{len(PARTES)}] {parte['titulo']} (alvo {alvo} palavras)")
+        fala, nota, palavras, bruta = gerar_parte(parte, ctx)
         print(f"[PARTE {i}/{len(PARTES)}] {palavras} palavras")
+        if palavras < 0.3 * alvo:
+            # Não é "curta": o modelo não escreveu no formato "NOME: fala" (ou
+            # devolveu quase nada). Reescrever em cima disso não adianta.
+            print(
+                f"[AVISO] parte {i} sem falas no formato esperado ({palavras} palavras); "
+                f"início da resposta: {bruta[:300]!r}",
+                file=sys.stderr,
+            )
+            fala, nota, palavras, bruta = gerar_parte(parte, ctx)
+            print(f"[PARTE {i}/{len(PARTES)}] 2ª tentativa: {palavras} palavras")
+            if palavras < 0.3 * alvo:
+                print(f"[ERRO] início da resposta: {bruta[:300]!r}", file=sys.stderr)
+                raise RuntimeError(
+                    f"o Gemini devolveu a parte {i} fora do formato 'NOME: fala' "
+                    f"({palavras} palavras, esperado ~{alvo})"
+                )
         if palavras < 0.7 * alvo:
             print(f"[AVISO] parte {i} curta ({palavras} de {alvo}); pedindo versão mais longa", file=sys.stderr)
             try:
@@ -1481,7 +1516,13 @@ async def _sintetizar(texto: str, voz: str, rate: str, pitch: str = "+0Hz") -> b
     atualizar o edge-tts — o workflow já instala a versão mais nova."""
     import edge_tts
 
+    if not re.search(r"\w", texto):
+        return b""  # só pontuação ("—", "..."): não há o que falar
     for tentativa in range(3):
+        if tentativa:
+            # "No audio was received" costuma ser texto com símbolo que a voz
+            # não aceita; na nova tentativa vai só letra, número e pontuação básica.
+            texto = re.sub(r"\s+", " ", re.sub(r"[^\w\s.,;:!?%$°/()'-]", " ", texto)).strip()
         try:
             communicate = edge_tts.Communicate(texto, voz, rate=rate, pitch=pitch)
             audio = b"".join(
@@ -1553,6 +1594,7 @@ def parse_dialogue(script: str) -> list[tuple[str, str]]:
     (troca de bloco). Linhas sem rótulo são continuação da fala anterior."""
     padrao = "|".join(re.escape(r) for r in todos_apresentadores())
     segments: list[tuple[str, str]] = []
+    pendente: str | None = None  # rótulo "ANA:" sozinho; a fala vem na linha seguinte
     for raw in script.splitlines():
         if re.fullmatch(r"\s*-{3,}\s*", raw):
             if segments and segments[-1][0] != "PAUSA":
@@ -1562,8 +1604,15 @@ def parse_dialogue(script: str) -> list[tuple[str, str]]:
         if not line:
             continue
         m = re.match(rf"(?i)^\**({padrao})\**\s*:\s*(.+)$", line)
+        solo = re.match(rf"(?i)^\**({padrao})\**\s*:?\**$", line)
         if m:
-            segments.append((m.group(1).upper(), m.group(2).strip()))
+            segments.append((m.group(1).upper(), m.group(2).lstrip("* ").strip()))
+            pendente = None
+        elif solo:
+            pendente = solo.group(1).upper()
+        elif pendente:
+            segments.append((pendente, line))
+            pendente = None
         elif segments and segments[-1][0] != "PAUSA":
             speaker, text = segments[-1]
             segments[-1] = (speaker, text + " " + line)
@@ -1684,6 +1733,8 @@ async def dialogue_to_speech(segments: list[tuple[str, str]], out_path: str) -> 
     amostra = b""
     anterior: tuple[str, str] | None = None
     troca_de_bloco = False
+    total_falas = sum(1 for sp, _ in segments if sp != "PAUSA")
+    falhas = 0
     with open(out_path, "wb") as out:
         for seg in segments:
             speaker, text = seg
@@ -1691,7 +1742,18 @@ async def dialogue_to_speech(segments: list[tuple[str, str]], out_path: str) -> 
                 troca_de_bloco = True
                 continue
             s = styles[speaker]
-            audio = await _sintetizar(texto_para_fala(text), s["voice"], s["rate"], s["pitch"])
+            try:
+                audio = await _sintetizar(texto_para_fala(text), s["voice"], s["rate"], s["pitch"])
+            except RuntimeError as e:
+                # Uma fala que a voz recusa não deve derrubar o episódio de 30
+                # min; só se forem muitas é que o serviço está fora do ar.
+                falhas += 1
+                print(f"[AVISO] fala ignorada pela voz: {text[:80]!r} ({e})", file=sys.stderr)
+                if falhas > max(3, total_falas // 20):
+                    raise
+                continue
+            if not audio:
+                continue
             audio = aparar_silencio(audio)
             amostra = amostra or audio
             if anterior:
